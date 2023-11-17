@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-const Navbar = ({ Dark, setDark }) => {
-  const [menu, setmenu] = useState(false);
-
+const Navbar = ({ Dark, setDark, menu, setmenu }) => {
   function toggleMenu() {
     setmenu(!menu);
   }
@@ -14,11 +12,14 @@ const Navbar = ({ Dark, setDark }) => {
           <ul className="nav-links text-xl">
             <li>
               <a
-                href="#profile"
-                className={`
-               text-white  font-medium
-               ${Dark ? "hover:text-black" : "hover:text-teal-400"}
-               `}
+                onClick={() => {
+                  toggleMenu;
+                  window.scrollTo(0, 0);
+                }}
+                className={` cursor-pointer
+                text-white  font-medium
+                hover:text-teal-400
+                `}
               >
                 About
               </a>
@@ -28,7 +29,7 @@ const Navbar = ({ Dark, setDark }) => {
                 href="#experience"
                 className={`
                 text-white  font-medium
-                ${Dark ? "hover:text-black" : "hover:text-teal-400"}
+                hover:text-teal-400
                 `}
               >
                 Skills
@@ -39,7 +40,7 @@ const Navbar = ({ Dark, setDark }) => {
                 href="#projects"
                 className={`
                 text-white  font-medium
-                ${Dark ? "hover:text-black" : "hover:text-teal-400"}
+                hover:text-teal-400
                 `}
               >
                 Projects
@@ -50,30 +51,30 @@ const Navbar = ({ Dark, setDark }) => {
                 href="#contact"
                 className={`
                 text-white  font-medium
-                ${Dark ? "hover:text-black" : "hover:text-teal-400"}
+                hover:text-teal-400
                 `}
               >
                 Contact
               </a>
             </li>
-            <li className=" h-7 cursor-pointer " onClick={() => setDark(!Dark)}>
-              <i
-                className={`fa-solid fa-circle-half-stroke  text-white
-                  `}
-              ></i>
+            <li
+              className=" h-7 cursor-pointer flex justify-center items-center  text-teal-800 rounded-full w-5 px-1 bg-white"
+              onClick={() => setDark(!Dark)}
+            >
+              {Dark ? (
+                <i className="fa-regular fa-moon "></i>
+              ) : (
+                <i className="fa-solid fa-sun text-base"></i>
+              )}
             </li>
           </ul>
         </div>
       </nav>
-      <nav className=" z-50 NavBg h-20 flex sm:hidden">
-        <div className={`logo italic ${!Dark ? "text-white" : "text-black"}`}>
-          Sooraj Rao
-        </div>
+      <nav className=" z-50 NavBg2 h-20 flex sm:hidden">
+        <div className={`logo italic text-white `}>Sooraj Rao</div>
         <div className="hamburger-menu">
           <div
-            className={`hamburger-icon ${menu && "open"}  ${
-              !Dark ? "text-white" : "text-black"
-            }
+            className={`hamburger-icon ${menu && "open"}  text-white
             text-2xl
             `}
             onClick={toggleMenu}
@@ -89,13 +90,15 @@ const Navbar = ({ Dark, setDark }) => {
               Dark ? "Light2" : "Dark2"
             }  shadow shadow-slate-300 menu-links z-50 ${
               menu && "open"
-            } mt-9 w-fit px-10 `}
+            } mt-7 w-fit px-10 `}
           >
             <li>
               <a
-                href="#profile"
-                onClick={toggleMenu}
-                className={`${menu && "open"}
+                onClick={() => {
+                  toggleMenu;
+                  window.scrollTo(0, 0);
+                }}
+                className={`${menu && "open"} cursor-pointer
                 ${!Dark ? "text-white" : "text-black"}
                 `}
               >
@@ -135,18 +138,19 @@ const Navbar = ({ Dark, setDark }) => {
                 Contact
               </a>
             </li>
+
             <li
-              className=" h-7 cursor-pointer pb-2  flex justify-center items-center"
+              className=" h-7 cursor-pointer flex justify-center items-center  pb-2  "
               onClick={() => {
                 setDark(!Dark);
                 toggleMenu();
               }}
             >
-              <i
-                className={`fa-solid fa-circle-half-stroke ${
-                  !Dark ? " text-white" : "text-black"
-                } `}
-              ></i>
+              {Dark ? (
+                <i className="fa-regular fa-moon  "></i>
+              ) : (
+                <i className="fa-solid fa-sun text-base"></i>
+              )}
             </li>
           </div>
         </div>

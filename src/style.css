@@ -16,7 +16,6 @@
 body {
   font-family: "Poppins", sans-serif;
   animation: ani 10s linear infinite;
-  transition: background 1s;
 }
 
 
@@ -27,9 +26,13 @@ body {
 
 .NavBg {
   color: black;
-  background: rgba(1, 120, 159, 0.574);
-  backdrop-filter: blur(10rem);
+  background: rgb(3, 79, 105);
+}
 
+.NavBg2 {
+  color: black;
+  /* background: linear-gradient(to left,rgb(5, 94, 118),rgb(2, 45, 57),rgb(2, 45, 57), rgb(4, 82, 104)); */
+  background: linear-gradient(to left, rgb(0, 36, 46), rgb(2, 124, 154));
 }
 
 .Light {
@@ -245,6 +248,11 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+.Filter {
+  filter: opacity(.8) blur(1rem);
+  background: rgba(100, 98, 98, 0.656);
 }
 
 .btn {

@@ -11,8 +11,8 @@ const Project = ({ Dark }) => {
       img: "../../assets/project-1.png",
       name: "Online Mechanic Booking",
       tech: "React, Tailwind, ExpressJs, MongoDB",
-      github: "",
-      live: "",
+      github: "https://github.com/Sooraj-Rao/FindMyMechanic",
+      live: "https://find-my-mechanic.vercel.app/",
     },
     {
       img: "../../assets/project-1.png",
@@ -25,8 +25,8 @@ const Project = ({ Dark }) => {
       img: "../../assets/project-1.png",
       name: "Movie Reviewing Platform",
       tech: "React, Firebase-OTP-Authentication, Firebase-Firestore",
-      github: "",
-      live: "",
+      github: "https://github.com/Sooraj-Rao/MovieRulz",
+      live: "https://movie-rulz.vercel.app/",
     },
     {
       img: "../../assets/project-1.png",
@@ -39,15 +39,15 @@ const Project = ({ Dark }) => {
       img: "../../assets/project-1.png",
       name: "QR Code Generator (API)",
       tech: "HTML,CSS,Javascript",
-      github: "",
-      live: "",
+      github: "https://github.com/Sooraj-Rao/QR-Generator",
+      live: "https://sooraj-rao.github.io/QR-Generator/",
     },
     {
       img: "../../assets/project-1.png",
       name: "URL shortner (API)",
       tech: "HTML,CSS,Javascript",
-      github: "https://www.github.com",
-      live: "https://www.linkedin.com",
+      github: "https://github.com/Sooraj-Rao/URL-shortner",
+      live: "https://sooraj-rao.github.io/URL-shortner/",
     },
   ];
   return (
@@ -74,7 +74,7 @@ const Project = ({ Dark }) => {
               let live = item.live;
               return (
                 <motion.div
-                  className={` w-80 p-2  group cursor-pointer rounded-xl   ${
+                  className={` w-80 p-2  group  rounded-xl   ${
                     Dark ? "bg-slate-100" : "bg-slate-300"
                   }`}
                   key={i}
@@ -83,14 +83,14 @@ const Project = ({ Dark }) => {
                   <div className="article-container  relative flex md:items-center md:justify-center justify-between ">
                     <div className=" absolute group-hover:flex flex  md:hidden gap-5 z-40 px-2 py-1  text-slate-300 w-11/12  justify-between md:justify-center ">
                       <span
-                        className=" flex items-center gap-2 bg-slate-900  px-2 rounded-md"
+                        className=" cursor-pointer hover:text-teal-500 flex items-center gap-2 bg-slate-900  px-2 rounded-md"
                         onClick={() => window.open(github, "_blank")}
                       >
                         <span className=" md:block hidden">Code</span>
                         <i className=" text-2xl fa-brands fa-github"></i>
                       </span>
                       <span
-                        className=" flex items-center gap-2 bg-slate-900 px-2 py-1 rounded-md"
+                        className=" cursor-pointer hover:text-teal-500  flex items-center gap-2 bg-slate-900 px-2 py-1 rounded-md"
                         onClick={() => window.open(live, "_blank")}
                       >
                         <span className=" md:block hidden">Live</span>

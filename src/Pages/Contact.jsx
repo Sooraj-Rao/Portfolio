@@ -24,7 +24,7 @@ const Contact = ({ Dark }) => {
         </p>
         <h1 className="title">Contact Me</h1>
         <div
-          className={`contact-info-upper-container  lg:w-1/3 sm:w-1/2 w-5/6
+          className={`contact-info-upper-container  lg:w-1/3 sm:w-1/2 w-11/12
         
         ${
           Dark
@@ -37,11 +37,11 @@ const Contact = ({ Dark }) => {
           <div className="contact-info-container sm:py-0 py-3 group">
             <h1
               className={`icon contact-icon 
-             ${
-               !Dark
-                 ? "text-white  group-hover:text-blue-400"
-                 : "text-black  group-hover:text-blue-700"
-             }
+              ${
+                !Dark
+                  ? "text-white  group-hover:text-teal-400"
+                  : "text-black  group-hover:text-teal-900"
+              }
             `}
             >
               <i className="fa-solid fa-envelope"></i>
@@ -51,8 +51,8 @@ const Contact = ({ Dark }) => {
                 className={` font-medium cursor-pointer
                 ${
                   !Dark
-                    ? "text-white  group-hover:text-blue-400"
-                    : "text-black  group-hover:text-blue-700"
+                    ? "text-white  group-hover:text-teal-400"
+                    : "text-black  group-hover:text-teal-900"
                 }
                 `}
                 onClick={() =>
@@ -67,11 +67,11 @@ const Contact = ({ Dark }) => {
           <div className="contact-info-container sm:py-0 py-3  group   ">
             <h1
               className={`icon contact-icon
-               ${
-                 !Dark
-                   ? "text-white  group-hover:text-blue-400"
-                   : "text-black  group-hover:text-blue-700"
-               }
+              ${
+                !Dark
+                  ? "text-white  group-hover:text-teal-400"
+                  : "text-black  group-hover:text-teal-900"
+              }
             `}
             >
               <i className="fa-brands fa-whatsapp "></i>
@@ -81,15 +81,15 @@ const Contact = ({ Dark }) => {
                 className={`
                 ${
                   !Dark
-                    ? "text-white  group-hover:text-blue-400"
-                    : "text-black  group-hover:text-blue-700"
+                    ? "text-white  group-hover:text-teal-400"
+                    : "text-black  group-hover:text-teal-900"
                 }
                  font-medium cursor-pointer
                 
                 `}
                 onClick={() =>
                   window.open(
-                    "https://wa.me/+918970889647/Hey there!",
+                    "https://wa.me/918970889647?text=Hi%20there!",
                     "_blank"
                   )
                 }
@@ -104,8 +104,8 @@ const Contact = ({ Dark }) => {
                 className={`fa-brands fa-linkedin 
                 ${
                   !Dark
-                    ? "text-white  group-hover:text-blue-400"
-                    : "text-black  group-hover:text-blue-700"
+                    ? "text-white  group-hover:text-teal-400"
+                    : "text-black  group-hover:text-teal-900"
                 }
               `}
               ></i>
@@ -115,8 +115,8 @@ const Contact = ({ Dark }) => {
                 className={`
                 ${
                   !Dark
-                    ? "text-white  group-hover:text-blue-400"
-                    : "text-black  group-hover:text-blue-700"
+                    ? "text-white  group-hover:text-teal-400"
+                    : "text-black  group-hover:text-teal-900"
                 }
                  font-medium cursor-pointer
                 `}

@@ -12,7 +12,8 @@ import Footer from "./Pages/Footer";
 const App = () => {
   const [Dark, setDark] = useState(true);
   const [show, setshow] = useState(null);
-  
+  const [menu, setmenu] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setshow(window.scrollY);
@@ -27,13 +28,15 @@ const App = () => {
 
   return (
     <div className={`${!Dark ? "Dark" : "Light"} duration-500`}>
-      <Navbar Dark={Dark} setDark={setDark} />
-      <Profile Dark={Dark} />
-      {/* <About Dark={Dark} /> */}
-      <Experiance Dark={Dark} />
-      <Project Dark={Dark} />
-      <Contact Dark={Dark} />
-      <Footer Dark={Dark} show={show} />
+      <Navbar Dark={Dark} setDark={setDark} menu={menu} setmenu={setmenu} />
+      <div className={`${menu && "Filter"}`}>
+        <Profile Dark={Dark} />
+        {/* <About Dark={Dark} /> */}
+        <Experiance Dark={Dark} />
+        <Project Dark={Dark} />
+        <Contact Dark={Dark} />
+        <Footer Dark={Dark} show={show} />
+      </div>
     </div>
   );
 };

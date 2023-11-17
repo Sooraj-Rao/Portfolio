@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Animate1, Animate5 } from "../Framer/Framer";
 import { Animate2 } from "../Framer/Framer";
@@ -48,7 +48,7 @@ const Profile = ({ Dark }) => {
                 } z-50 
                 ${!Dark ? "group-hover:text-white" : "group-hover:text-black"}
                   `}
-              > 
+              >
                 Download CV
               </span>
             </button>
@@ -75,7 +75,9 @@ const Profile = ({ Dark }) => {
           <div id="socials-container">
             <div
               className="icon w-10"
-              onClick={() => window.open("https://www.github.com", "_blank")}
+              onClick={() =>
+                window.open("https://github.com/Sooraj-Rao", "_blank")
+              }
             >
               <span className=" text-4xl  ">
                 <i
