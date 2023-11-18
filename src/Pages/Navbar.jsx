@@ -95,7 +95,7 @@ const Navbar = ({ Dark, setDark, menu, setmenu }) => {
             <li>
               <a
                 onClick={() => {
-                  toggleMenu;
+                  toggleMenu();
                   window.scrollTo(0, 0);
                 }}
                 className={`${menu && "open"} cursor-pointer

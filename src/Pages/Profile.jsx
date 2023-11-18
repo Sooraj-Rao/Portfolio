@@ -18,7 +18,7 @@ const Profile = ({ Dark }) => {
         <motion.div className="section__pic-container" variants={Animate1}>
           <img
             src="../../assets/profile-pic.png"
-            alt="John Doe profile picture"
+            alt="Profile Pic"
           />
         </motion.div>
         <motion.div className="section__text" variants={Animate5}>
