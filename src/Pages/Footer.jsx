@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = ({ Dark, show }) => {
+const Footer = ({ show }) => {
   return (
     <div>
       <footer className=" relative text-center py-10">
@@ -13,11 +13,9 @@ const Footer = ({ Dark, show }) => {
         >
           <i
             className={`fa-solid fa-circle-up p-1 rounded-full
-          ${
-            !Dark
-              ? "sm:text-white text-blue-600 hover:text-teal-400 group-hover:shadow-slate-700 group-hover:shadow-[0px_0px_1rem_1px]  "
-              : "text-black hover:text-teal-800 group-hover:shadow-black group-hover:shadow-[0px_0px_1rem_1px] "
-          }
+              text-teal-950  shadow-black shadow-[0px_0px_.6rem_1px] 
+               group-hover:text-teal-900  
+               bg-white 
           `}
           ></i>
         </div>

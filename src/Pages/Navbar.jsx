@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Navbar = ({ Dark, setDark, menu, setmenu }) => {
+const Navbar = ({ menu, setmenu }) => {
   function toggleMenu() {
     setmenu(!menu);
   }
@@ -57,16 +57,6 @@ const Navbar = ({ Dark, setDark, menu, setmenu }) => {
                 Contact
               </a>
             </li>
-            <li
-              className=" h-7 cursor-pointer flex justify-center items-center  text-teal-800 rounded-full w-5 px-1 bg-white"
-              onClick={() => setDark(!Dark)}
-            >
-              {Dark ? (
-                <i className="fa-regular fa-moon "></i>
-              ) : (
-                <i className="fa-solid fa-sun text-base"></i>
-              )}
-            </li>
           </ul>
         </div>
       </nav>
@@ -86,11 +76,11 @@ const Navbar = ({ Dark, setDark, menu, setmenu }) => {
             )}
           </div>
           <div
-            className={`${
-              Dark ? "Light2" : "Dark2"
-            }  shadow shadow-slate-300 menu-links z-50 ${
-              menu && "open"
-            } mt-7 w-fit px-10 `}
+            className={`
+            Light2
+              shadow shadow-slate-300 menu-links z-50 ${
+                menu && "open"
+              } mt-7 w-fit px-10 `}
           >
             <li>
               <a
@@ -99,7 +89,7 @@ const Navbar = ({ Dark, setDark, menu, setmenu }) => {
                   window.scrollTo(0, 0);
                 }}
                 className={`${menu && "open"} cursor-pointer
-                ${!Dark ? "text-white" : "text-black"}
+                 text-black
                 `}
               >
                 About
@@ -110,7 +100,7 @@ const Navbar = ({ Dark, setDark, menu, setmenu }) => {
                 href="#experience"
                 onClick={toggleMenu}
                 className={`${menu && "open"}
-                ${!Dark ? "text-white" : "text-black"}
+                text-black
                 `}
               >
                 Skills
@@ -121,7 +111,7 @@ const Navbar = ({ Dark, setDark, menu, setmenu }) => {
                 href="#projects"
                 onClick={toggleMenu}
                 className={`${menu && "open"}
-                ${!Dark ? "text-white" : "text-black"}
+                text-black
                 `}
               >
                 Projects
@@ -132,25 +122,11 @@ const Navbar = ({ Dark, setDark, menu, setmenu }) => {
                 href="#contact"
                 onClick={toggleMenu}
                 className={`${menu && "open"}
-                ${!Dark ? "text-white" : "text-black"}
+                 text-black
                 `}
               >
                 Contact
               </a>
-            </li>
-
-            <li
-              className=" h-7 cursor-pointer flex justify-center items-center  pb-2  "
-              onClick={() => {
-                setDark(!Dark);
-                toggleMenu();
-              }}
-            >
-              {Dark ? (
-                <i className="fa-regular fa-moon  "></i>
-              ) : (
-                <i className="fa-solid fa-sun text-base"></i>
-              )}
             </li>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { Animate2 } from "../Framer/Framer";
 import { Animate3 } from "../Framer/Framer";
 import { Animate4 } from "../Framer/Framer";
 
-const Project = ({ Dark }) => {
+const Project = () => {
   const Proj = [
     {
       img: "../../assets/project-1.png",
@@ -60,9 +60,8 @@ const Project = ({ Dark }) => {
     >
       <section id="projects" className="pt-24">
         <p
-          className={`section__text__p1 ${
-            Dark ? "text-slate-800" : "text-slate-400"
-          }`}
+          className={`section__text__p1 text-slate-800 
+          `}
         >
           Browse My Recent
         </p>
@@ -74,8 +73,7 @@ const Project = ({ Dark }) => {
               let live = item.live;
               return (
                 <motion.div
-                  className={` w-80 p-2  group  rounded-xl   ${
-                    Dark ? "bg-slate-100" : "bg-slate-300"
+                  className={` w-80 p-2  group  rounded-xl bg-slate-200 
                   }`}
                   key={i}
                   variants={Animate4}
@@ -109,7 +107,7 @@ const Project = ({ Dark }) => {
                     className={` py-2 text-black sm:text-2xl text-xl
                   `}
                   >
-                    {item.name.length > 15
+                    {item.name.length > 20
                       ? item.name.slice(0, 20) + "..."
                       : item.name}
                   </h2>

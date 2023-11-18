@@ -5,7 +5,7 @@ import { Animate2 } from "../Framer/Framer";
 import { Animate3 } from "../Framer/Framer";
 import { Animate4 } from "../Framer/Framer";
 
-const Experiance = ({ Dark }) => {
+const Experiance = () => {
   const image = "../../assets/check.png";
   return (
     <motion.div
@@ -20,9 +20,10 @@ const Experiance = ({ Dark }) => {
         className=" md:pt-28 pt-24"
       >
         <p
-          className={`section__text__p1 ${
-            Dark ? " text-slate-700" : " text-slate-400"
-          }`}
+          className={`section__text__p1 
+           text-slate-700"  " text-slate-400"
+          
+           `}
         >
           Here is{" "}
         </p>
@@ -30,9 +31,8 @@ const Experiance = ({ Dark }) => {
         <div className="experience-details-container">
           <div className="about-containers">
             <motion.div
-              className={`details-container ${
-                !Dark ? "bg-slate-300" : "bg-white"
-              } `}
+              className={`details-container bg-slate-100 
+               `}
               variants={Animate1}
             >
               <h2 className="experience-sub-title">Frontend Development</h2>
@@ -96,9 +96,9 @@ const Experiance = ({ Dark }) => {
               </div>
             </motion.div>
             <motion.div
-              className={`details-container ${
-                !Dark ? "bg-slate-300" : "bg-white"
-              } `}
+              className={`details-container 
+             bg-slate-100 
+               `}
               variants={Animate5}
             >
               <h2 className="experience-sub-title">BackEnd Development</h2>

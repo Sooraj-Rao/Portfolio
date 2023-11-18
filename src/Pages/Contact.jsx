@@ -5,7 +5,7 @@ import { Animate2 } from "../Framer/Framer";
 import { Animate3 } from "../Framer/Framer";
 import { Animate4 } from "../Framer/Framer";
 
-const Contact = ({ Dark }) => {
+const Contact = () => {
   return (
     <motion.div
       initial={"Offscreen"}
@@ -16,62 +16,47 @@ const Contact = ({ Dark }) => {
     >
       <section id="contact" className="sm:my-0 my-10">
         <p
-          className={`section__text__p1 ${
-            Dark ? "text-slate-800" : "text-slate-300"
-          } `}
+          className={`section__text__p1 text-slate-800 
+           `}
         >
           Get in Touch
         </p>
         <h1 className="title">Contact Me</h1>
         <div
           className={`contact-info-upper-container  lg:w-1/3 sm:w-1/2 w-11/12
-        
-        ${
-          Dark
-            ? "  shadow-[0rem_.5rem_1rem_1px]"
-            : "  shadow-[inset_0rem_0rem_1rem_2px]"
-        } 
-        ${Dark ? " shadow-slate-800" : " shadow-slate-500"} 
+            shadow-[0rem_.5rem_1rem_1px]
+            shadow-slate-800
         `}
         >
-          <div className="contact-info-container sm:py-0 py-3 group">
+          <div className="contact-info-container sm:py-0 py-3 group group-hover:text-teal-900">
             <h1
               className={`icon contact-icon 
-              ${
-                !Dark
-                  ? "text-white  group-hover:text-teal-400"
-                  : "text-black  group-hover:text-teal-900"
-              }
+                   text-black  group-hover:text-teal-900
             `}
             >
               <i className="fa-solid fa-envelope"></i>
             </h1>
             <div>
               <h3
-                className={` font-medium cursor-pointer
-                ${
-                  !Dark
-                    ? "text-white  group-hover:text-teal-400"
-                    : "text-black  group-hover:text-teal-900"
-                }
+                className={` font-medium cursor-pointer 
+                    text-black  group-hover:text-teal-900
+                    sm:text-xl
+                   text-[1.05rem]
                 `}
                 onClick={() =>
                   window.open("mailto:soorajrao180@gmail.com", "_blank")
-                }
-              >
+                }>
                 soorajrao180@gmail.com
+
               </h3>
             </div>
           </div>
-
-          <div className="contact-info-container sm:py-0 py-3  group   ">
+          <div className="contact-info-container sm:py-0 py-3  group group-hover:text-teal-900   ">
             <h1
               className={`icon contact-icon
-              ${
-                !Dark
-                  ? "text-white  group-hover:text-teal-400"
-                  : "text-black  group-hover:text-teal-900"
-              }
+             
+                  text-black  group-hover:text-teal-900
+              
             `}
             >
               <i className="fa-brands fa-whatsapp "></i>
@@ -79,12 +64,12 @@ const Contact = ({ Dark }) => {
             <div>
               <h3
                 className={`
-                ${
-                  !Dark
-                    ? "text-white  group-hover:text-teal-400"
-                    : "text-black  group-hover:text-teal-900"
-                }
+               
+                     text-black  group-hover:text-teal-900
+                
                  font-medium cursor-pointer
+                 sm:text-xl
+                 text-[1.05rem]
                 
                 `}
                 onClick={() =>
@@ -102,22 +87,19 @@ const Contact = ({ Dark }) => {
             <h1 className="icon contact-icon">
               <i
                 className={`fa-brands fa-linkedin 
-                ${
-                  !Dark
-                    ? "text-white  group-hover:text-teal-400"
-                    : "text-black  group-hover:text-teal-900"
-                }
+               
+                     text-black  group-hover:text-teal-900
+                
               `}
               ></i>
             </h1>
             <div>
               <h3
                 className={`
-                ${
-                  !Dark
-                    ? "text-white  group-hover:text-teal-400"
-                    : "text-black  group-hover:text-teal-900"
-                }
+               
+                     text-black  group-hover:text-teal-900
+                     sm:text-xl
+                     text-[1.05rem]
                  font-medium cursor-pointer
                 `}
                 onClick={() =>
