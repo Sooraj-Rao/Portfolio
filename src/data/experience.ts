@@ -5,7 +5,6 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     title: "Reactjs Frontend Developer",
     organisation: {
       name: "Skima",
-      href: "https://skima.ai/",
     },
     date: "Oct 2023 - Present",
     location: "Mumbai",
@@ -15,7 +14,6 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     title: "Engineering Trainee",
     organisation: {
       name: "Hexaware",
-      href: "https://hexaware.com/",
     },
     date: "July 2023 - Sep 2023",
     location: "Remote",
@@ -26,7 +24,6 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     title: "Frontend Developer Intern",
     organisation: {
       name: "Master Infotech",
-      href: "https://masterinfotech.com/",
     },
     date: "Winter - 2022",
     location: "Remote",
