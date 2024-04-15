@@ -200,7 +200,6 @@ export function cursorTrail(props: CursorTrail) {
     document.removeEventListener("touchstart", onMouseMove);
     window.removeEventListener("orientationchange", resizeCanvas);
     window.removeEventListener("resize", resizeCanvas);
-    // window.removeEventListener("scroll", trackYScroll);
     window.removeEventListener("focus", startAnimation);
     window.removeEventListener("blur", stopAnimation);
   }

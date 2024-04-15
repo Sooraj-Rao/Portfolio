@@ -1,5 +1,4 @@
 import { RefObject, useRef } from "react";
-import Link from "next/link";
 
 import { motion, useScroll } from "framer-motion";
 

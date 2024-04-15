@@ -49,8 +49,8 @@ export default function LandingHero() {
               <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-2xl">
                 <span className="text-xl text-accent sm:text-3xl">Hi</span>,
                 I&apos;m
-                <span className="text-accent"> Sooraj Rao</span> , I turn
-                vision into reality with code and design.
+                <span className="text-accent"> Sooraj Rao</span> , I turn into
+                reality with code and design.
               </div>
             </FadeUp>
           </AnimatePresence>
