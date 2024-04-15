@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { Montserrat } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 import Navbar from "@/layout/navbar";
 import { routes } from "@/data/navigationRoutes";
@@ -22,6 +23,7 @@ export default function MainLayout(props: MainLayoutProps) {
       <div className={classNames("min-h-screen", montserrat.className)}>
         <Navbar routes={routes} />
         <main>{props.children}</main>
+        <Analytics />
       </div>
       <Footer />
     </>
