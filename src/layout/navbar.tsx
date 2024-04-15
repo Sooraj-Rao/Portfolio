@@ -48,7 +48,7 @@ export default function Navbar(props: NavbarProps) {
               return (
                 <li
                   key={index}
-                  className="my-3 transition-transform duration-100 hover:scale-[1.1]"
+                  className="my-3 transition-transform duration-100 "
                 >
                   <Link
                     href={_link.href}
@@ -56,7 +56,7 @@ export default function Navbar(props: NavbarProps) {
                       pathName === _link.href
                         ? "font-semibold text-background dark:hover:text-foreground"
                         : "text-foreground",
-                      "group relative mx-3 rounded-full px-3 py-2 transition-colors duration-200",
+                      "group relative mx-3 rounded-full px-3 py-2    duration-200 hover:bg-accent/20 ",
                     )}
                   >
                     {_link.href === pathName && (
@@ -71,7 +71,7 @@ export default function Navbar(props: NavbarProps) {
                             },
                           },
                         }}
-                        className="absolute inset-0 -z-10 rounded-full bg-accent group-hover:bg-accent/80"
+                        className="absolute inset-0 -z-10 rounded-full bg-accent  group-hover:bg-accent/80"
                       ></motion.span>
                     )}
                     {_link.title}

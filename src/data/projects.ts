@@ -1,43 +1,35 @@
 import { type ProjectCardProps } from "@/components/projects/project-card";
 import { type ProjectShowcaseListItem } from "@/components/projects/project-showcase-list";
-import { siteMetadata } from "@/data/siteMetaData.mjs";
+// import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
     index: 0,
-    title: "Json Tree",
+    title: "FindMyMechanic",
     href: "/projects",
-    tags: ["Nextjs", "Tailwindcss", "Monaco Editor", "Vercel"],
+    tags: ["ReactJS", "Tailwindcss", "ExpressJS", "NodeJS", "Redux"],
     image: {
-      LIGHT: "/images/projects/jsontreeLight.webp",
-      DARK: "/images/projects/jsontreeDark.webp",
+      LIGHT: "/images/projects/mech.png",
+      DARK: "/images/projects/mech.png",
     },
   },
   {
     index: 1,
-    title: "Many Games",
+    title: "QuickMart",
     href: "/projects",
-    tags: [
-      "Reactjs",
-      "Tailwindcss",
-      "Scss",
-      "Vite",
-      "React-router-dom",
-      "Redux",
-      "Vercel",
-    ],
+    tags: ["Reactjs", "Tailwindcss", "Razorpay", "ExpressJS", "NodeJS"],
     image: {
-      LIGHT: "/images/projects/manyGamesLight.webp",
-      DARK: "/images/projects/manyGamesDark.webp",
+      LIGHT: "/images/projects/cart1.png",
+      DARK: "/images/projects/cart1.png",
     },
   },
   {
     index: 2,
-    title: "Kanban",
+    title: "FileConverter",
     href: "/projects",
-    tags: ["Reactjs", "Vite", "Tailwindcss", "Vercel", "Zustand", "React DND"],
+    tags: ["ReactJS", "Tailwindcss", "Shadcn/ui", "Vercel", "Zustand"],
     image: {
-      LIGHT: "/images/projects/kanbanLight.webp",
+      LIGHT: "/images/projects/conv.png",
       DARK: "/images/projects/kanbanDark.webp",
     },
   },
@@ -45,81 +37,85 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
   {
-    name: "Json tree",
+    name: "Mechanic Shop Finder",
     favicon: "/images/projects/logos/jsontree.ico",
     imageUrl: [
-      "/images/projects/jsontreeLight.webp",
-      "/images/projects/jsontreeDark.webp",
+      "/images/projects/mech.png",
+      "/images/projects/mech2.png",
+      "/images/projects/mech3.png",
+      "/images/projects/mech4.png",
     ],
     description:
       "Visualize JSON data format in form of a tree or graph. Application is made using Nextjs, Tailwindcss and Monaco Editor. Design image can be downloaded from this app.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/jsontree",
-    liveWebsiteHref: "https://jsontree.vercel.app",
+    sourceCodeHref: "https://github.com/Sooraj-Rao/FindMyMechanic",
+    liveWebsiteHref: "https://find-my-mechanic.vercel.app/",
   },
   {
-    name: "Kanban app",
+    name: "QuickMart (E-Commerce)",
     favicon: "/images/projects/logos/kanban.ico",
     imageUrl: [
-      "/images/projects/kanbanLight.webp",
-      "/images/projects/kanbanDark.webp",
-      "/images/projects/kanbanCardLight.webp",
+      "/images/projects/cart1.png",
+      "/images/projects/cart.png",
+      "/images/projects/cart2.png",
+      "/images/projects/cart3.png",
+      "/images/projects/cart4.png",
     ],
     description:
       "Keep track of projects and tasks in different categories. Drag and drop card from tables. Assign user and priority to task and many more features. This app is made using Reactjs, Typescript, Tailwindcss and React-beautiful-dnd library.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/kanban",
-    liveWebsiteHref: "https://kannban-board.vercel.app",
+    sourceCodeHref: "https://github.com/Sooraj-Rao/E-commerce",
+    liveWebsiteHref: "https://srj-quickmart.vercel.app/",
   },
   {
-    name: "Many Games",
+    name: "File Converter",
     favicon: "/images/projects/logos/manygames.ico",
     imageUrl: [
-      "/images/projects/manyGamesDark.webp",
-      "/images/projects/manyGamesLight.webp",
-      "/images/projects/manyGames2048.webp",
-      "/images/projects/manyGamesPuzzle.webp",
-      "/images/projects/manyGamesWordle.webp",
+      "/images/projects/conv.png",
+      "/images/projects/con2.png",
+      "/images/projects/con3.png",
     ],
     description:
       "Many short and fun games using Reactjs, Typescript and Tailwindcss with collaboration with other developers",
-    sourceCodeHref: "https://github.com/BUMBAIYA/ManyGames",
-    liveWebsiteHref: "https://manygames.vercel.app",
+    sourceCodeHref: "https://github.com/Sooraj-Rao/Convertio",
+    liveWebsiteHref: "https://convertio-sooraj-rao.vercel.app/",
   },
   {
-    name: "My portfolio",
+    name: "URL Shortener",
     favicon: "/favicon.ico",
     imageUrl: [
-      "/images/projects/portfolioDark.webp",
-      "/images/projects/portfolioLight.webp",
+      "/images/projects/url3.png",
+      "/images/projects/url.png",
+      "/images/projects/url1.png",
+      "/images/projects/url2.png",
     ],
     description:
       "My personal portfolio website made using Nextjs, tailwindcss and framer motion.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/amitchauhan-v2",
-    liveWebsiteHref: siteMetadata.siteUrl,
+    sourceCodeHref: "https://github.com/Sooraj-Rao/URL-shortner",
+    liveWebsiteHref: "https://srj-url-shortner.vercel.app/",
   },
-  {
-    name: "Covid Tracker",
-    favicon: "/images/projects/logos/covidtracker.ico",
-    imageUrl: [
-      "/images/projects/covidTracker.webp",
-      "/images/projects/covidTrackerMap.webp",
-      "/images/projects/covidTrackerTable.webp",
-    ],
-    description:
-      "Get latest covid related stats in a table where user can filter using country and cases. It also has a map which show every countries data for quick view. It uses an open source api (disease.sh). Made using Reactjs, Javascript and MUI",
-    sourceCodeHref: "https://github.com/BUMBAIYA/CovidTracker",
-    liveWebsiteHref: "https://bumbaiya.github.io/CovidTracker",
-  },
-  {
-    name: "Stock predictor",
-    favicon: "/images/projects/logos/stockpredictor.ico",
-    imageUrl: [
-      "/images/projects/stockPredictor.webp",
-      "/images/projects/stockPredictorCandleChart.webp",
-      "/images/projects/stockPredictorCompareChart.webp",
-      "/images/projects/stockPredictorLineChart.webp",
-    ],
-    description:
-      "Get prediction of opening and closing price of stocks price. Frontend is made using Reactjs and backend is made using Flask and Machine learning model are trained using Tensorflow",
-    sourceCodeHref: "https://github.com/Rohrschachh/Stock-Market-Predictor",
-  },
+  // {
+  //   name: "Covid Tracker",
+  //   favicon: "/images/projects/logos/covidtracker.ico",
+  //   imageUrl: [
+  //     "/images/projects/covidTracker.webp",
+  //     "/images/projects/covidTrackerMap.webp",
+  //     "/images/projects/covidTrackerTable.webp",
+  //   ],
+  //   description:
+  //     "Get latest covid related stats in a table where user can filter using country and cases. It also has a map which show every countries data for quick view. It uses an open source api (disease.sh). Made using Reactjs, Javascript and MUI",
+  //   sourceCodeHref: "https://github.com/BUMBAIYA/CovidTracker",
+  //   liveWebsiteHref: "https://bumbaiya.github.io/CovidTracker",
+  // },
+  // {
+  //   name: "Stock predictor",
+  //   favicon: "/images/projects/logos/stockpredictor.ico",
+  //   imageUrl: [
+  //     "/images/projects/stockPredictor.webp",
+  //     "/images/projects/stockPredictorCandleChart.webp",
+  //     "/images/projects/stockPredictorCompareChart.webp",
+  //     "/images/projects/stockPredictorLineChart.webp",
+  //   ],
+  //   description:
+  //     "Get prediction of opening and closing price of stocks price. Frontend is made using Reactjs and backend is made using Flask and Machine learning model are trained using Tensorflow",
+  //   sourceCodeHref: "https://github.com/Rohrschachh/Stock-Market-Predictor",
+  // },
 ];
