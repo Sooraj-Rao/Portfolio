@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { Montserrat } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import Navbar from "@/layout/navbar";
 import { routes } from "@/data/navigationRoutes";
@@ -24,6 +25,7 @@ export default function MainLayout(props: MainLayoutProps) {
         <Navbar routes={routes} />
         <main>{props.children}</main>
         <Analytics />
+        <SpeedInsights />
       </div>
       <Footer />
     </>

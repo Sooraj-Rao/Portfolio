@@ -18,6 +18,7 @@
     "@headlessui/react": "^1.7.17",
     "@tailwindcss/forms": "^0.5.6",
     "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
     "formik": "^2.4.5",
     "framer-motion": "^10.12.16",
     "lru-cache": "^10.0.1",
