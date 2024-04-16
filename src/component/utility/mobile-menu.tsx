@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 import { Dialog, Transition } from "@headlessui/react";
 
-import ThemeSwitch from "@/components/utility/theme-switch";
+import ThemeSwitch from "@/component/utility/theme-switch";
 import { type NavbarProps } from "@/layout/navbar";
 import { classNames } from "@/utility/classNames";
 
@@ -28,8 +28,8 @@ export default function MobileMenu({
 
   return (
     <Transition show={openMenu} as={Fragment}>
-      <Dialog as="div" className="z-50" onClose={setOpenMenu}>
-        <div className="fixed inset-0 flex items-center justify-center">
+      <Dialog as="div" onClose={setOpenMenu}>
+        <div className="fixed inset-0 flex items-center justify-center  ">
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -39,8 +39,8 @@ export default function MobileMenu({
             leaveFrom="opacity-100 bottom-[15%]"
             leaveTo="opacity-0 bottom-full"
           >
-            <Dialog.Panel className="pointer-events-none absolute flex min-h-[85%] w-full flex-col items-center justify-center overflow-y-auto rounded-b-2xl border-2 border-accent/20 bg-background px-6 py-8 text-accent shadow-lg shadow-accent/10 md:px-10 md:py-16">
-              <div className="pointer-events-auto flex flex-col items-center gap-6 text-center">
+            <Dialog.Panel className="pointer-events-none absolute flex min-h-[90%] w-full flex-col items-center justify-center overflow-y-auto rounded-b-2xl border-2 border-accent/20 bg-background bg-white px-6 py-8 text-accent shadow-lg shadow-accent/10 md:px-10 md:py-16">
+              <div className="pointer-events-auto flex flex-col items-center gap-6  text-center">
                 {routes.map((link, i) => (
                   <button
                     key={i}
@@ -58,7 +58,7 @@ export default function MobileMenu({
                 ))}
                 <ThemeSwitch setClose={setOpenMenu} />
               </div>
-              <div className="absolute bottom-0 py-6">©2023 Amit Chauhan</div>
+              <div className="absolute bottom-0 py-6">©2024 Sooraj Rao</div>
             </Dialog.Panel>
           </Transition.Child>
         </div>

@@ -11,7 +11,7 @@ export function cursorTrail(props: CursorTrail) {
   );
   const accentColor = `hsla(${
     colorRaw ? colorRaw.split(" ").join(",") : "0, 0%, 0%"
-  }, 0.35)`;
+  }, 0.30)`;
   const { ref, color } = props;
   const ctx = ref.current?.getContext("2d")!;
   let AnimationFeature = {

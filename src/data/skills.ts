@@ -9,8 +9,8 @@ import {
   FramerMotionIcon,
   ReactRouterDomIcon,
   VitePwaIcon,
-} from "@/components/icons";
-import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
+} from "@/component/icons";
+import { type SkillsShowcaseProps } from "@/component/skills/skills-showcase";
 
 // Languages
 import HtmlSvg from "../../public/icons/html.svg";

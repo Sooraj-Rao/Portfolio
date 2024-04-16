@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion";
 
 import ExperienceShowcaseListItem, {
   type ExperienceShowcaseListItemProps,
-} from "@/components/experience/experience-showcase-list-item";
+} from "@/component/experience/experience-showcase-list-item";
 
 export interface ExperienceShowcaseListProps {
   title: string;

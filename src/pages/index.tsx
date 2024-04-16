@@ -3,21 +3,21 @@ import Head from "next/head";
 
 import { NextSeo } from "next-seo";
 
-import LandingHero from "@/components/landing-hero";
-import CursorTrailCanvas from "@/components/cursor-trail-canvas";
+import LandingHero from "@/component/landing-hero";
+import CursorTrailCanvas from "@/component/cursor-trail-canvas";
 import { PROJECT_SHOWCASE } from "@/data/projects";
 import { SKILLS_DATA } from "@/data/skills";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 const SkillsShowcase = dynamic(
-  () => import("@/components/skills/skills-showcase"),
+  () => import("@/component/skills/skills-showcase"),
   {
     ssr: true,
   },
 );
 
 const ProjectShowcase = dynamic(
-  () => import("@/components/projects/project-showcase"),
+  () => import("@/component/projects/project-showcase"),
   {
     ssr: true,
   },

@@ -1,32 +1,47 @@
-import ContactButton from "@/components/contact-form/contact-button";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/icons";
+import { ContactDialog } from "@/component/contact/contact.dialog";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
+import { Socials } from "@/data/Socials";
+import Link from "next/link";
+import {
+  GithubIcon,
+  LinkedinIcon,
+  TwitterIcon,
+  MailIcon,
+} from "@/component/icons";
+
+// eslint-disable-next-line react/jsx-key
+const icon = [<MailIcon />, <TwitterIcon />, <GithubIcon />, <LinkedinIcon />];
 
 export default function Footer() {
   return (
     <footer className="flex w-full flex-col items-center gap-20 bg-transparent px-6 py-8 sm:px-14 md:px-20">
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 rounded-2xl bg-accent p-8 text-background sm:p-12 md:gap-12 lg:p-20">
+      <div className="mx-auto flex h-64 w-full max-w-7xl flex-col gap-8 rounded-2xl bg-accent/70 p-8 text-background sm:p-12 md:gap-12 lg:p-4">
         <div className="text-center">
           <span className="inline-block rounded-full bg-background px-3 py-1 text-xs font-semibold uppercase text-accent md:text-sm lg:text-base">
-            Get in touch
+            Socials
           </span>
         </div>
-        <a
-          href={`mailto:${siteMetadata.email}`}
-          target="_blank"
-          className="mb-6 cursor-pointer text-center text-2xl font-bold underline sm:text-4xl lg:text-7xl"
-        >
-          <span>soorajrao180@</span>
-          <br />
-          <span>gmail.com</span>
-        </a>
-        <div className="flex justify-center">
-          <ContactButton />
+        <div className=" flex items-center justify-center gap-x-8">
+          {Socials.map((item, i) => {
+            return (
+              <Link
+                href={item?.link}
+                className=" hover:text-white"
+                key={item.name}
+              >
+                <h1>{icon[i]}</h1>
+                <h1>{item?.name}</h1>
+              </Link>
+            );
+          })}
+        </div>
+        <div className=" flex justify-center">
+          <ContactDialog />
         </div>
       </div>
-      <div className="flex w-full flex-col items-center justify-between gap-8 text-center  md:flex-row md:justify-between lg:mx-auto lg:max-w-7xl">
+      <div className="flex w-full flex-col items-center justify-between gap-8   md:flex-row md:justify-between lg:mx-auto lg:max-w-7xl">
         <span className="text-foreground">©2024 Sooraj Rao</span>
-        <div className="flex gap-8">
+        {/* <div className="flex gap-8">
           <a
             href={siteMetadata.github}
             target="_blank"
@@ -51,7 +66,7 @@ export default function Footer() {
           >
             <LinkedinIcon className="text-accent transition-colors duration-150 hover:text-accent-foreground" />
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

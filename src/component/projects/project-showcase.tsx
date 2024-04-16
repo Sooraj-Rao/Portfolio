@@ -4,10 +4,10 @@ import Image from "next/image";
 
 import { AnimatePresence, motion } from "framer-motion";
 
-import { ArrowTopRight } from "@/components/icons";
+import { ArrowTopRight } from "@/component/icons";
 import ProjectShowcaseList, {
   type ProjectShowcaseListItem,
-} from "@/components/projects/project-showcase-list";
+} from "@/component/projects/project-showcase-list";
 
 const generateImageData = (proj: ProjectShowcaseListItem[]) => {
   return proj.map((p) => p.image);
