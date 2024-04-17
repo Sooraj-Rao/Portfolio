@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 "use client";
 import { ContactDialog } from "@/component/contact/contact.dialog";
 import { Socials } from "@/data/Socials";
