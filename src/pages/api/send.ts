@@ -16,18 +16,16 @@ export default async function handler(
     const { body } = req as SendMessageRequest;
     const { sender, message } = body;
 
-    const accountSid = "AC8fa8bd96fb9504a9d722f585ccd571be";
-    const authToken = "aa78cb50ee64959974764273dd09505e";
+    const accountSid = process.env.TWILIO_ID!;
+    const authToken = process.env.TWILIO_TOKEN!;
 
     const client = twilio(accountSid, authToken);
 
-    const twilioMessage = await client.messages.create({
+    await client.messages.create({
       body: `${sender} \n\n${message}`,
-      from: "whatsapp:+14155238886",
-      to: "whatsapp:+918970889647",
+      from: process.env.TWILIO_NO_S!,
+      to: process.env.TWILIO_NO_R!,
     });
-
-    console.log(twilioMessage.sid);
     res
       .status(200)
       .json({ success: true, message: "Message sent successfully" });
