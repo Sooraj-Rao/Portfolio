@@ -1,9 +1,3 @@
-import {
-  GithubIcon,
-  LinkedinIcon,
-  MailIcon,
-  TwitterIcon,
-} from "@/component/icons";
 import { siteMetadata } from "./siteMetaData.mjs";
 
 export const Socials = [

@@ -1,5 +1,5 @@
+"use client";
 import { ContactDialog } from "@/component/contact/contact.dialog";
-import { siteMetadata } from "@/data/siteMetaData.mjs";
 import { Socials } from "@/data/Socials";
 import Link from "next/link";
 import {
@@ -9,7 +9,6 @@ import {
   MailIcon,
 } from "@/component/icons";
 
-// eslint-disable-next-line react/jsx-key
 const icon = [<MailIcon />, <TwitterIcon />, <GithubIcon />, <LinkedinIcon />];
 
 export default function Footer() {

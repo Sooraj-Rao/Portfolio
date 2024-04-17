@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import axios from "axios";
 import { useRef, useState } from "react";
-import toast, { ToastBar } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { SendMessageIcon } from "../icons";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
