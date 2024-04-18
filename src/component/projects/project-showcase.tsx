@@ -52,23 +52,13 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
               className="absolute right-0 top-0 -z-50"
             >
               <Image
-                src={images[currentImage].LIGHT}
+                src={props.projects[currentImage].image}
                 unoptimized
                 width={100}
                 height={100}
-                className="h-auto w-1/2 rounded-lg border border-zinc-300 shadow-lg dark:hidden dark:border-accent/50"
+                className="h-auto w-1/2 rounded-lg border border-zinc-300 shadow-lg  dark:border-accent/50"
                 alt={`project ${currentImage}`}
               />
-              {images[currentImage].DARK !== undefined && (
-                <Image
-                  src={images[currentImage].DARK!}
-                  unoptimized
-                  width={100}
-                  height={100}
-                  className="hidden h-auto w-1/2 rounded-lg border border-zinc-300 shadow-lg dark:inline-block dark:border-accent/20 dark:shadow-lg dark:shadow-emerald-400/5"
-                  alt={`project ${currentImage}`}
-                />
-              )}
             </motion.div>
           </AnimatePresence>
         </div>

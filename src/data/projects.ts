@@ -8,30 +8,21 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     title: "FindMyMechanic",
     href: "/projects",
     tags: ["ReactJS", "Tailwindcss", "ExpressJS", "NodeJS", "Redux"],
-    image: {
-      LIGHT: "/images/projects/mech.png",
-      DARK: "/images/projects/mech.png",
-    },
+    image: "/images/projects/mech.png",
   },
   {
     index: 1,
     title: "QuickMart",
     href: "/projects",
     tags: ["Reactjs", "Tailwindcss", "Razorpay", "ExpressJS", "NodeJS"],
-    image: {
-      LIGHT: "/images/projects/cart1.png",
-      DARK: "/images/projects/cart1.png",
-    },
+    image: "/images/projects/cart1.png",
   },
   {
     index: 2,
     title: "FileConverter",
     href: "/projects",
     tags: ["ReactJS", "Tailwindcss", "Shadcn/ui", "Vercel", "Zustand"],
-    image: {
-      LIGHT: "/images/projects/conv.png",
-      DARK: "/images/projects/kanbanDark.webp",
-    },
+    image: "/images/projects/conv.png",
   },
 ];
 

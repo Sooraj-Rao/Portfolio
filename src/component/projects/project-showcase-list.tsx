@@ -9,10 +9,7 @@ export type ProjectShowcaseListItem = {
   title: string;
   href: string;
   tags: string[];
-  image: {
-    LIGHT: string;
-    DARK?: string;
-  };
+  image: string;
 };
 
 export interface ProjectShowcaseListProps {
@@ -33,7 +30,7 @@ export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
           "hidden text-6xl font-semibold transition-colors duration-300 lg:block",
           props.activeProject === props.data.index
             ? "text-accent"
-            : "text-accent/70",
+            : "text-accent/70"
         )}
       >
         {props.data.index + 1}.
@@ -48,7 +45,7 @@ export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
               "hidden text-6xl font-semibold transition-colors duration-300 lg:block",
               props.activeProject === props.data.index
                 ? "text-accent"
-                : "text-accent/70",
+                : "text-accent/70"
             )}
           >
             {props.data.title}
@@ -59,7 +56,7 @@ export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
           <span
             className={classNames(
               "absolute -bottom-1 left-0 hidden h-1 origin-left rounded-lg bg-accent transition-[width] duration-300 group-hover:w-full lg:block",
-              props.activeProject === props.data.index ? "w-full" : "w-0",
+              props.activeProject === props.data.index ? "w-full" : "w-0"
             )}
           ></span>
         </Link>
