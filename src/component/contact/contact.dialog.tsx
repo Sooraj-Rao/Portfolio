@@ -54,6 +54,7 @@ export function ContactDialog() {
   };
 
   return (
+    // @ts-ignore
     <Dialog open={isOpen} onClose={() => setisopen(false)}>
       {" "}
       <DialogTrigger className="flex w-full justify-center">
@@ -68,6 +69,7 @@ export function ContactDialog() {
         </div>
       </DialogTrigger>
       <DialogContent
+      // @ts-ignore
         setisopen={setisopen}
         className="text-black dark:text-white sm:max-w-[425px]"
       >
