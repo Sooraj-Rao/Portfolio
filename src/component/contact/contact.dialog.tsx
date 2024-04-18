@@ -1,3 +1,4 @@
+"use client";
 import {
   Dialog,
   DialogContent,
@@ -19,7 +20,7 @@ import { verifyEmailAddress } from "@/utility/verifyEmail";
 
 export function ContactDialog() {
   const [loader, setLoader] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); // State to manage dialog open/close
+  const [isOpen, setisopen] = useState(false); // State to manage dialog open/close
 
   const senderRef = useRef(null);
   const messageRef = useRef(null);
@@ -36,38 +37,38 @@ export function ContactDialog() {
 
     setLoader(true);
     try {
-      const res = await axios.post("/api/send", { sender, message });
-      if (res.data.success) {
-        toast.success(res.data.message);
-        setIsOpen(false);
-      } else {
+      const res = await axios.post("/api/mail", { sender, message });
+      if (res.data.error) {
         toast.error(res.data.message);
+      } else {
+        toast.success(res.data.message);
+        setisopen(false);
       }
     } catch (error) {
       console.log(error);
       toast.error("Failed to send message");
     } finally {
       setLoader(false);
-      setIsOpen(false);
+      setisopen(false);
     }
   };
 
   return (
-    <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
+    <Dialog open={isOpen} onClose={() => setisopen(false)}>
       {" "}
       <DialogTrigger className="flex w-full justify-center">
-        <button
+        <div
           className="group flex h-12 w-[12rem] items-center justify-center gap-x-3 rounded-md border border-accent font-semibold text-accent duration-500 hover:border-none  hover:bg-accent/30 hover:text-black  hover:duration-500 dark:hover:bg-accent"
-          onClick={() => setIsOpen(true)}
+          onClick={() => setisopen(true)}
         >
           <span>Send Message</span>
           <span>
             <SendMessageIcon className="text-accent transition-transform duration-300 group-hover:translate-x-1 group-hover:text-black" />
           </span>
-        </button>
+        </div>
       </DialogTrigger>
       <DialogContent
-        setisOpen={setIsOpen}
+        setisopen={setisopen}
         className="text-black dark:text-white sm:max-w-[425px]"
       >
         <DialogHeader>
