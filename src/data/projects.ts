@@ -37,7 +37,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
       "/images/projects/mech4.png",
     ],
     description:
-      "Visualize JSON data format in form of a tree or graph. Application is made using Nextjs, Tailwindcss and Monaco Editor. Design image can be downloaded from this app.",
+      "The Mechanic Shop Finder project, developed with MERN stack and Redux, simplifies locating mechanic shops. It utilizes React for UI, MongoDB for data storage, and Express.js with Node.js for backend functionality, ensuring seamless user experience.",
     sourceCodeHref: "https://github.com/Sooraj-Rao/FindMyMechanic",
     liveWebsiteHref: "https://find-my-mechanic.vercel.app/",
   },
@@ -52,7 +52,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
       "/images/projects/cart4.png",
     ],
     description:
-      "Keep track of projects and tasks in different categories. Drag and drop card from tables. Assign user and priority to task and many more features. This app is made using Reactjs, Typescript, Tailwindcss and React-beautiful-dnd library.",
+      "This e-commerce platform leverages the MERN stack alongside Zustand for state management and Razorpay for secure transactions. With React powering the dynamic user interface, MongoDB handling data storage, and Express.js with Node.js ensuring backend functionality, it delivers a seamless shopping experience.",
     sourceCodeHref: "https://github.com/Sooraj-Rao/E-commerce",
     liveWebsiteHref: "https://srj-quickmart.vercel.app/",
   },
@@ -65,7 +65,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
       "/images/projects/con3.png",
     ],
     description:
-      "Many short and fun games using Reactjs, Typescript and Tailwindcss with collaboration with other developers",
+      "The file converter app, developed with Next.js and TypeScript, empowers users to effortlessly convert unlimited files with instant download capabilities. Leveraging Next.js for seamless client-side rendering, TypeScript for type safety, and efficient file handling, users can convert various file formats with ease and download the converted files instantly.",
     sourceCodeHref: "https://github.com/Sooraj-Rao/Convertio",
     liveWebsiteHref: "https://convertio-sooraj-rao.vercel.app/",
   },
@@ -79,7 +79,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
       "/images/projects/url2.png",
     ],
     description:
-      "My personal portfolio website made using Nextjs, tailwindcss and framer motion.",
+      "A MERN stack URL shortener efficiently converts long URLs into Short. Built with MongoDB, Express.js, React.js, and Node.js, it offers seamless link generation and redirection, enhancing user accessibility and web navigation.",
     sourceCodeHref: "https://github.com/Sooraj-Rao/URL-shortner",
     liveWebsiteHref: "https://srj-url-shortner.vercel.app/",
   },

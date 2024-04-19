@@ -4,6 +4,12 @@ import {
   SiPrisma,
   SiNextdotjs,
   SiFlask,
+  SiFirebase,
+  SiMongoose,
+  SiMysql,
+  SiRedis,
+  SiFlutter,
+  SiTreyarch,
 } from "react-icons/si";
 import {
   FramerMotionIcon,
@@ -65,10 +71,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Typescript",
         icon: TypescriptSvg,
       },
-      {
-        name: "Python",
-        icon: PythonSvg,
-      },
+      // {
+      //   name: "Python",
+      //   icon: PythonSvg,
+      // },
     ],
   },
   {
@@ -82,10 +88,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Nextjs",
         icon: SiNextdotjs,
       },
-      {
-        name: "Solidjs",
-        icon: SolidjsSvg,
-      },
+      // {
+      //   name: "Solidjs",
+      //   icon: SolidjsSvg,
+      // },
       {
         name: "React Router Dom",
         icon: ReactRouterDomIcon,
@@ -111,9 +117,13 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: ViteSvg,
       },
       {
-        name: "Vite PWA",
-        icon: VitePwaIcon,
-      },
+        name:'Zustand',
+        icon:SiTreyarch
+      }
+      // {
+      //   name: "Vite PWA",
+      //   icon: VitePwaIcon,
+      // },
     ],
   },
   {
@@ -132,8 +142,8 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: SiSocketdotio,
       },
       {
-        name: "Flask",
-        icon: SiFlask,
+        name: "Firebase",
+        icon: SiFirebase,
       },
     ],
   },
@@ -145,12 +155,16 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: MongoDBSvg,
       },
       {
-        name: "Postgress",
-        icon: PostgressSvg,
+        name: "MySql",
+        icon: SiMysql,
       },
       {
-        name: "Prisma",
-        icon: SiPrisma,
+        name: "Redis",
+        icon: SiRedis,
+      },
+      {
+        name: "Mongoose",
+        icon: SiMongoose,
       },
     ],
   },
@@ -172,6 +186,19 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       {
         name: "Postman",
         icon: PostmanSvg,
+      },
+    ],
+  },
+  {
+    sectionName: "App Develepment",
+    skills: [
+      {
+        name: "Flutter",
+        icon: SiFlutter,
+      },
+      {
+        name: "React-Native",
+        icon: ReactjsSvg,
       },
     ],
   },

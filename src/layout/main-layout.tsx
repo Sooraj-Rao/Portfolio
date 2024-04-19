@@ -1,3 +1,4 @@
+'use client'
 import { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { Montserrat } from "next/font/google";
