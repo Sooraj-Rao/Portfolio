@@ -19,6 +19,8 @@ export interface ProjectShowcaseListProps {
 }
 
 export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
+
+  
   return (
     <motion.div
       className={classNames("group flex gap-4 ")}

@@ -17,36 +17,52 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { verifyEmailAddress } from "@/utility/verifyEmail";
+import { useToast } from "@/components/ui/use-toast";
 
 export function ContactDialog() {
   const [loader, setLoader] = useState(false);
-  const [isOpen, setisopen] = useState(false); // State to manage dialog open/close
+  const [isOpen, setisopen] = useState(false);
 
   const senderRef = useRef(null);
   const messageRef = useRef(null);
+  const { toast } = useToast();
 
   const Send = async () => {
     const sender = senderRef?.current?.value;
     const message = messageRef?.current?.value;
 
     if (!sender || !message) {
-      return toast.error("Fill all fields");
+      return toast({
+        variant: "destructive",
+        description: "All fields mandatory!",
+      });
     }
     const validate = verifyEmailAddress(sender);
-    if (!validate) return toast.error("Email is invalid");
+    if (!validate)
+      return toast({
+        variant: "destructive",
+        description: "Email is invalid!",
+      });
 
     setLoader(true);
     try {
       const res = await axios.post("/api/mail", { sender, message });
-      if (res.data.error) {
-        toast.error(res.data.message);
+      if (res?.data?.error) {
+        toast({
+          variant: "destructive",
+          description: res?.data?.message,
+        });
       } else {
-        toast.success(res.data.message);
+        toast({
+          description: res?.data?.message,
+        });
         setisopen(false);
       }
     } catch (error) {
-      console.log(error);
-      toast.error("Failed to send message");
+      return toast({
+        variant: "destructive",
+        description: "Failed to send message!",
+      });
     } finally {
       setLoader(false);
       setisopen(false);
@@ -69,14 +85,14 @@ export function ContactDialog() {
         </div>
       </DialogTrigger>
       <DialogContent
-      // @ts-ignore
+        // @ts-ignore
         setisopen={setisopen}
         className="text-black dark:text-white sm:max-w-[425px]"
       >
         <DialogHeader>
           <DialogTitle>Send me a quick Message</DialogTitle>
           <DialogDescription>
-            Keep it short! I will try to reply within minutes.
+            Keep it short! I will try to reply soon.
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">

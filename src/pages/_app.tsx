@@ -10,7 +10,7 @@ import "@/styles/globals.css";
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
+    <ThemeProvider attribute="class" defaultTheme="system">
       <MainLayout>
         <AnimatePresence mode="wait" initial={false}>
           <Component key={router.asPath} {...pageProps} />

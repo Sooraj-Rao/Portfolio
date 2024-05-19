@@ -1,10 +1,9 @@
 import { NextSeo } from "next-seo";
 
 import AboutHero from "@/component/about-hero";
-import ExperienceShowcaseList from "@/component/experience/experience-showcase-list";
-// import { EXPERIENCE } from "@/data/experience";
 import { EDUCATION } from "@/data/education";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
+import ExperienceShowcaseList from "@/component/experience/experience-showcase-list";
 
 export default function About() {
   return (
@@ -39,7 +38,7 @@ export default function About() {
         ]}
       />
       <AboutHero />
-      {/* <ExperienceShowcaseList title="Experience" details={EXPERIENCE} /> */}
+      
       <ExperienceShowcaseList title="Education" details={EDUCATION} />
     </>
   );

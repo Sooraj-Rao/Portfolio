@@ -3,25 +3,37 @@ import Image from "next/image";
 import { AnimatePresence } from "framer-motion";
 
 import FadeUp from "@/animation/fade-up";
+import { motion } from "framer-motion";
 import FadeRight from "@/animation/fade-right";
 import heroProfileImg from "@/public/images/heroProfile.png";
 
 export default function AboutHero() {
+  let location =
+    "https://www.google.com/maps/place/Mangaluru,+Karnataka/@12.9231466,74.7696613,12z/data=!3m1!4b1!4m6!3m5!1s0x3ba35a4c37bf488f:0x827bbc7a74fcfe64!8m2!3d12.9141417!4d74.8559568!16zL20vMDFzdjZr?entry=ttu";
   return (
     <div className="mx-auto mt-0 flex max-w-7xl flex-col items-center gap-6 px-6 pt-20 text-center sm:px-14 md:mt-20 md:px-20 lg:mt-0 lg:flex-row lg:text-left">
-      <div className="w-full sm:w-1/2 md:w-2/3 lg:inline-block lg:h-full lg:w-1/2">
-        <AnimatePresence>
-          <FadeUp key="hero-image" duration={0.6}>
-            <Image
-              src={heroProfileImg}
-              width={100}
-              height={100}
-              className="h-auto w-full px-0 xl:px-16"
-              alt="hero image"
-              unoptimized
-            />
-          </FadeUp>
-        </AnimatePresence>
+      <div className="w-full overflow-hidden rounded-br-[10rem] rounded-tl-[10rem]  bg-teal-100  dark:bg-[#2eb0b76c] sm:w-1/2 md:w-2/3 lg:inline-block lg:h-full lg:w-1/3">
+        <motion.div
+          initial={{ y: 80 }}
+          whileInView={{ y: 0 }}
+          transition={{
+            type: "spring",
+            duration: 0.4,
+          }}
+        >
+          <AnimatePresence>
+            <FadeUp key="hero-image" duration={0.6}>
+              <Image
+                src={"/dp.png"}
+                width={100}
+                height={100}
+                className="xl:px-s16 h-auto w-full px-0"
+                alt="hero image"
+                unoptimized
+              />
+            </FadeUp>
+          </AnimatePresence>
+        </motion.div>
       </div>
       <div className="sm:1/2 mt-10 w-full lg:w-1/2">
         <AnimatePresence>
@@ -58,9 +70,9 @@ export default function AboutHero() {
                 height={15}
               />
             </div>
-            <span className="text-lg font-medium text-foreground">
+            <a href={location} target="_blank" className="text-lg hover:underline font-medium text-foreground">
               Mangalore, India
-            </span>
+            </a>
           </FadeRight>
         </AnimatePresence>
       </div>

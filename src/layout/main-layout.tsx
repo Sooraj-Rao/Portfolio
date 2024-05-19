@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { Montserrat } from "next/font/google";
@@ -8,7 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/layout/navbar";
 import { routes } from "@/data/navigationRoutes";
 import { classNames } from "@/utility/classNames";
-import { Toaster } from "react-hot-toast";
+import { Toaster } from "@/components/ui/toaster"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -28,14 +28,7 @@ export default function MainLayout(props: MainLayoutProps) {
         <main>{props.children}</main>
         <Analytics />
         <SpeedInsights />
-        <Toaster
-          position="top-center"
-          reverseOrder={false}
-          gutter={8}
-          toastOptions={{
-            duration: 5000,
-          }}
-        />
+        <Toaster />
       </div>
       <Footer />
     </>

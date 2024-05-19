@@ -32,7 +32,7 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
   return (
     <section className="overflow-hidden px-6 py-32 sm:px-14 md:px-20">
       <div className="relative mx-auto max-w-7xl">
-        <div className="relative right-0 top-0 hidden lg:block">
+        <div className="relative right-0 top-0 hidden xl:block">
           <AnimatePresence>
             <motion.div
               key={props.projects[currentImage].title}
@@ -56,7 +56,7 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
                 unoptimized
                 width={100}
                 height={100}
-                className="h-auto w-1/2 rounded-lg border border-zinc-300 shadow-lg  dark:border-accent/50"
+                className="h-auto w-1/2 rounded-lg border  border-zinc-300 shadow-lg  dark:border-accent/50"
                 alt={`project ${currentImage}`}
               />
             </motion.div>

@@ -1,5 +1,5 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import { EmailTemplate } from "@/component/template";
+import type { NextApiRequest, NextApiResponse } from "next";
 import { Resend } from "resend";
 
 interface SendMessageRequest {
@@ -30,5 +30,5 @@ export default async function handler(
       .json({ error: true, message: "Failed to send message" });
   }
 
-  res.status(200).json({ message: "Sent successfully" });
+  res.status(200).json({ message: "Successfully sent message " });
 }
