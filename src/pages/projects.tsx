@@ -8,15 +8,15 @@ export default function Projects() {
   return (
     <>
       <NextSeo
-        title="Projects by Sooraj Rao - React and Frontend Developer Portfolio"
+        title="Projects by Sooraj Rao - Web and Apps Developer Portfolio"
         description="Explore a collection of projects by Sooraj Rao, a seasoned React and Frontend Developer. From innovative web applications to responsive interfaces, discover the depth and diversity of my work."
         canonical={`${siteMetadata.siteUrl}/projects`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/projects`,
           title:
-            "Discover Projects by Sooraj Rao - React and Frontend Developer",
+            "Discover Projects by Sooraj Rao - Web and Apps Developer",
           description:
-            "Explore a showcase of projects crafted by Sooraj Rao, a React and Frontend Developer. Witness the fusion of creativity and technology in web development.",
+            "Explore a showcase of projects crafted by Sooraj Rao, a Web and Apps Developer. Witness the fusion of creativity and technology in web development.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,

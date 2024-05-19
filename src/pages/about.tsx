@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <NextSeo
-        title="About Sooraj Rao | React and Frontend Developer"
+        title="About Sooraj Rao | Web and Apps Developer"
         description="Learn more about Sooraj Rao, a dedicated React and Frontend Developer with 2 years of experience. Discover the journey, skills, and passion that drive me to create innovative and user-friendly web solutions."
         canonical={`${siteMetadata.siteUrl}/about`}
         openGraph={{

@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <CursorTrailCanvas className="pointer-events-none fixed inset-0 -z-10 h-full w-full" />
       <NextSeo
-        title="Sooraj Rao | React and Frontend Developer"
+        title="Sooraj Rao | Web and Apps Developer"
         description="Explore the professional portfolio of Sooraj Rao, a skilled React and Frontend Developer with 2 years of hands-on experience. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
         canonical={siteMetadata.siteUrl}
         openGraph={{
