@@ -2,10 +2,12 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
+import EmblaCarousel from "@/component/projects/emblaCarosel";
 
-import Corosel from "@/component/utility/corosel";
+// import Corosel from "@/component/utility/corosel";
 import { GithubIcon } from "@/component/icons";
 import Link from "next/link";
+
 
 export interface ProjectCardProps {
   name: string;
@@ -20,6 +22,7 @@ export interface ProjectCardProps {
 export default function ProjectCard(props: ProjectCardProps) {
   const query = "https://www.google.com/search?q=";
 
+  const OPTIONS = { dragFree: true, loop: true };
   return (
     <motion.div
       initial={{ y: 80 }}
@@ -28,16 +31,16 @@ export default function ProjectCard(props: ProjectCardProps) {
         type: "spring",
         duration: 0.4,
       }}
-      className="w-full overflow-hidden rounded-lg border border-accent/20 bg-background shadow-md transition-shadow duration-150 hover:shadow-md hover:shadow-accent/20 dark:bg-zinc-800 dark:hover:shadow-lg"
+      className="w-full overflow-hidden rounded-lg  bg-background shadow shadow-foreground/50 transition-shadow duration-150   dark:bg-zinc-800 "
     >
-      <div
-        className={` duration-300  hover:scale-[1.05] scale-[1.01] hover:duration-300 `}
-      >
-        <Corosel images={props.imageUrl} aspectRatio={2.1} />
+      <div className={` flex  h-72 w-full items-center justify-center mb-4  `}>
+        <EmblaCarousel slides={props.imageUrl} options={OPTIONS} />
       </div>
       <div className="p-3 text-foreground sm:p-4">
         <Link href={props?.liveWebsiteHref} className="flex items-center gap-3">
-          <span className="text-md font-semibold  hover:underline">{props.name}</span>
+          <span className="text-md font-semibold  hover:underline">
+            {props.name}
+          </span>
         </Link>
         <div className="flex items-center gap-3">
           {props?.tags?.map((item, i) => {
@@ -78,4 +81,3 @@ export default function ProjectCard(props: ProjectCardProps) {
     </motion.div>
   );
 }
-

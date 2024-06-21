@@ -30,7 +30,7 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
   };
 
   return (
-    <section className="overflow-hidden px-6 py-32 sm:px-14 md:px-20">
+    <section className="overflow-hidden px-6 py-5 sm:px-14 md:px-20">
       <div className="relative mx-auto max-w-7xl">
         <div className="relative right-0 top-0 hidden xl:block">
           <AnimatePresence>
@@ -62,7 +62,11 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
             </motion.div>
           </AnimatePresence>
         </div>
-        <h2 className="text-xl font-semibold text-accent sm:text-3xl">
+        <h2
+          className="
+         bg-gradient-to-r from-black  to-black/60 bg-clip-text 
+         text-2xl font-bold   text-transparent dark:from-white   dark:to-white/10  xl:text-4xl   "
+        >
           My projects
         </h2>
         <div className="hidden flex-col gap-6 py-14 sm:gap-8 sm:py-20 md:gap-10 lg:flex">
@@ -87,7 +91,7 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
                   {proj.index + 1}.
                 </span>
                 <span
-                  key={proj.title}
+                  key={proj.index}
                   className="-underline-offset-1 text-3xl font-semibold text-accent underline transition-colors duration-300 sm:text-4xl md:text-5xl lg:hidden"
                 >
                   {proj.title}
@@ -106,11 +110,11 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
           className="group relative flex max-w-max items-center gap-4 text-base font-semibold sm:text-lg md:text-xl"
         >
           <div className="relative max-w-max">
-            <span className="text-accent">See more projects</span>
+            <span className="text-foreground">See more projects</span>
             <span className="absolute -bottom-1 left-0 h-[2px] w-0 origin-left rounded-lg bg-accent transition-[width] duration-300 group-hover:w-full"></span>
           </div>
           <div className="h-8 w-8">
-            <ArrowTopRight className="rotate-45 text-accent transition-transform duration-300 group-hover:rotate-0 group-hover:scale-[1.1]" />
+            <ArrowTopRight className="rotate-45 text-foreground transition-transform duration-300 group-hover:rotate-0 group-hover:scale-[1.1]" />
           </div>
         </Link>
       </div>

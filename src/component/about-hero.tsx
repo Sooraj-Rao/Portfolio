@@ -5,14 +5,14 @@ import { AnimatePresence } from "framer-motion";
 import FadeUp from "@/animation/fade-up";
 import { motion } from "framer-motion";
 import FadeRight from "@/animation/fade-right";
-import heroProfileImg from "@/public/images/heroProfile.png";
+import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function AboutHero() {
-  let location =
-    "https://www.google.com/maps/place/Mangaluru,+Karnataka/@12.9231466,74.7696613,12z/data=!3m1!4b1!4m6!3m5!1s0x3ba35a4c37bf488f:0x827bbc7a74fcfe64!8m2!3d12.9141417!4d74.8559568!16zL20vMDFzdjZr?entry=ttu";
   return (
-    <div className="mx-auto mt-0 flex max-w-7xl flex-col items-center gap-6 px-6 pt-20 text-center sm:px-14 md:mt-20 md:px-20 lg:mt-0 lg:flex-row lg:text-left">
-      <div className="w-full overflow-hidden rounded-br-[10rem] rounded-tl-[10rem]  bg-teal-100  dark:bg-[#2eb0b76c] sm:w-1/2 md:w-2/3 lg:inline-block lg:h-full lg:w-1/3">
+    <div className="mx-auto mt-0 flex max-w-7xl flex-col items-center gap-x-14 px-6 pt-20 text-center sm:px-14 md:mt-20 md:px-20 lg:mt-0 lg:flex-row lg:text-left">
+      <div className="w-full overflow-hidden  rounded-full bg-neutral-200 dark:bg-neutral-800  
+       sm:w-[10rem] sm:h-[10rem] lg:w-[25rem] lg:h-[25rem] 
+       ">
         <motion.div
           initial={{ y: 80 }}
           whileInView={{ y: 0 }}
@@ -27,7 +27,7 @@ export default function AboutHero() {
                 src={"/dp.png"}
                 width={100}
                 height={100}
-                className="xl:px-s16 h-auto w-full px-0"
+                className="h-auto sm:scale-125 lg:mt-14 sm:mt-5 w-full px-0 xl:px-10"
                 alt="hero image"
                 unoptimized
               />
@@ -38,7 +38,9 @@ export default function AboutHero() {
       <div className="sm:1/2 mt-10 w-full lg:w-1/2">
         <AnimatePresence>
           <FadeUp key="title-greeting" duration={0.6}>
-            <h1 className="text-6xl font-bold text-accent sm:text-7xl md:text-6xl lg:text-5xl xl:text-7xl">
+            <h1 className="
+            bg-gradient-to-br from-foreground/70 to-foreground text-transparent bg-clip-text
+            text-6xl font-bold  sm:text-7xl md:text-6xl lg:text-5xl xl:text-7xl">
               Hi, I&apos;m Sooraj Rao
             </h1>
           </FadeUp>
@@ -70,7 +72,11 @@ export default function AboutHero() {
                 height={15}
               />
             </div>
-            <a href={location} target="_blank" className="text-lg hover:underline font-medium text-foreground">
+            <a
+              href={siteMetadata.location}
+              target="_blank"
+              className="text-lg font-medium text-foreground hover:underline"
+            >
               Mangalore, India
             </a>
           </FadeRight>

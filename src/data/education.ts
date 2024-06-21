@@ -19,7 +19,7 @@ export const EDUCATION: ExperienceShowcaseListItemProps[] = [
     date: "2020-2023",
     location: "Mangalore, Karnataka",
     description:
-      "Completed the course in Electronics Bifocal Science with 68%. Started freelancing making 3D assets for games. Got interested in game development and learned unity and c#",
+      "Completed BCA course with fundamentals of Computer Science like Opertaing system with Linux, Computer Networks, .Net, C, C++, Java .",
   },
   {
     title: "Secondary School Education",

@@ -4,6 +4,7 @@ import AboutHero from "@/component/about-hero";
 import { EDUCATION } from "@/data/education";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 import ExperienceShowcaseList from "@/component/experience/experience-showcase-list";
+import { EXPERIENCE } from "@/data/experiance";
 
 export default function About() {
   return (
@@ -32,13 +33,13 @@ export default function About() {
         additionalMetaTags={[
           {
             property: "keywords",
-            content:
-              "About Me, React Developer, Frontend Developer, Web Developer, JavaScript, HTML, CSS, Professional Journey, Skills, Passion for Web Development,Sooraj Rao",
+            content: siteMetadata.contentText,
           },
         ]}
       />
       <AboutHero />
-      
+
+      <ExperienceShowcaseList title="Experiance" details={EXPERIENCE} />
       <ExperienceShowcaseList title="Education" details={EDUCATION} />
     </>
   );

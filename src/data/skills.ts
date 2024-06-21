@@ -51,18 +51,18 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
   {
     sectionName: "Languages",
     skills: [
-      {
-        name: "HTML",
-        icon: HtmlSvg,
-      },
-      {
-        name: "CSS",
-        icon: CsssSvg,
-      },
-      {
-        name: "SASS",
-        icon: SassSvg,
-      },
+      // {
+      //   name: "HTML",
+      //   icon: HtmlSvg,
+      // },
+      // {
+      //   name: "CSS",
+      //   icon: CsssSvg,
+      // },
+      // {
+      //   name: "SASS",
+      //   icon: SassSvg,
+      // },
       {
         name: "Javascript",
         icon: JavascriptSvg,
@@ -71,10 +71,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Typescript",
         icon: TypescriptSvg,
       },
-      // {
-      //   name: "Python",
-      //   icon: PythonSvg,
-      // },
+      {
+        name: "Dart",
+        icon: PostgressSvg,
+      },
     ],
   },
   {
@@ -92,10 +92,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       //   name: "Solidjs",
       //   icon: SolidjsSvg,
       // },
-      {
-        name: "React Router Dom",
-        icon: ReactRouterDomIcon,
-      },
+      // {
+      //   name: "React Router Dom",
+      //   icon: ReactRouterDomIcon,
+      // },
       {
         name: "Redux",
         icon: ReduxSvg,
@@ -104,22 +104,22 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Tailwindcss",
         icon: TailwindcssSvg,
       },
-      {
-        name: "MUI",
-        icon: MuiSvg,
-      },
-      {
-        name: "Framer motion",
-        icon: FramerMotionIcon,
-      },
-      {
-        name: "Vite",
-        icon: ViteSvg,
-      },
-      {
-        name:'Zustand',
-        icon:SiTreyarch
-      }
+      // {
+      //   name: "MUI",
+      //   icon: MuiSvg,
+      // },
+      // {
+      //   name: "Framer motion",
+      //   icon: FramerMotionIcon,
+      // },
+      // {
+      //   name: "Vite",
+      //   icon: ViteSvg,
+      // },
+      // {
+      //   name:'Zustand',
+      //   icon:SiTreyarch
+      // }
       // {
       //   name: "Vite PWA",
       //   icon: VitePwaIcon,
@@ -157,6 +157,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       {
         name: "MySql",
         icon: SiMysql,
+      },
+      {
+        name: "Postgress",
+        icon: PostgressSvg,
       },
       {
         name: "Redis",

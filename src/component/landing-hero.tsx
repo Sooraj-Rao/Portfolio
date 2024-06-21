@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import FadeUp from "@/animation/fade-up";
+import { Badge } from "@/components/ui/badge";
 
 export default function LandingHero() {
   const [scrollY, setScrollY] = useState(0);
@@ -35,21 +36,33 @@ export default function LandingHero() {
       className="pointer-events-none flex h-[calc(100vh-112px)] items-center px-6 sm:px-14 md:px-20"
     >
       <div className="-mt-[112px] w-full">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl  text-center">
           <AnimatePresence>
             <FadeUp key="title-main" duration={0.6}>
-              <h1 className="bg-accent bg-clip-text py-2 text-5xl font-bold text-transparent sm:text-6xl md:text-7xl xl:text-8xl">
+              <span className="  text-lg font-semibold">Heyy there, I am </span>
+              <h1
+                className=" 
+                bg-gradient-to-r from-black  to-black/60 bg-clip-text py-2 text-transparent 
+              text-5xl  font-extrabold  dark:from-white dark:to-white/10  sm:text-6xl md:text-7xl xl:text-8xl   "
+              >
                 Sooraj Rao
               </h1>
-              <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
+
+              <span
+                className="
+                bg-gradient-to-t from-black to-black/60  bg-clip-text  py-2 font-semibold text-transparent
+              dark:from-white dark:to-white/10  md:text-3xl"
+              >
                 Web and Apps developer
               </span>
             </FadeUp>
             <FadeUp key="description" duration={0.6} delay={0.2}>
-              <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-2xl">
-                <span className="text-xl text-accent sm:text-3xl">Hi</span>,
-                I&apos;m
-                <span className="text-accent"> Sooraj Rao</span> , turning creativity into code.
+              <div className=" flex items-center justify-center ">
+                <div className=" shadow shadow-foreground/10   mt-8 flex items-center rounded-full  px-3   py-1 text-center font-semibold  dark:text-zinc-200 sm:text-base md:text-2xl">
+                  <span className=" text-base text-foreground   ">
+                  I specialize in developing web and mobile applications.
+                  </span>
+                </div>
               </div>
             </FadeUp>
           </AnimatePresence>

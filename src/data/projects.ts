@@ -1,4 +1,4 @@
-import { type ProjectCardProps } from "@/component/projects/project-card";
+import { ProjectCardProps } from "@/component/projects/project-card";
 import { type ProjectShowcaseListItem } from "@/component/projects/project-showcase-list";
 
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
@@ -86,7 +86,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "A MERN stack URL shortener efficiently converts long URLs into Short. Built with MongoDB, Express.js, React.js, and Node.js, it offers seamless link generation and redirection, enhancing user accessibility and web navigation.",
     sourceCodeHref: "https://github.com/Sooraj-Rao/URL-shortner",
-    liveWebsiteHref: "https://srj-url-shortner.vercel.app/",
+    liveWebsiteHref: "https://srj-quicklink.vercel.app/",
     tags: ["React", "NodeJS", "ExpressJS", "MongoDB", "Shadcn/Ui"],
    
   },

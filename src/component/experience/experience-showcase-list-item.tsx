@@ -13,13 +13,13 @@ function ShowCaseLiIcon(props: ExperienceListIconProps) {
     layoutEffect: false,
   });
   return (
-    <figure className="absolute left-0 stroke-zinc-900">
+    <figure className="absolute left-0 stroke-zinc-900  dark:stroke-zinc-100 fill-zinc-900 dark:fill-zinc-100">
       <svg width="75" height="75" viewBox="0 0 100 100">
         <circle
           cx="50"
           cy="27"
           r="20"
-          className="fill-none stroke-accent stroke-1"
+          className="fill-none  stroke-1"
         />
         <motion.circle
           style={{
@@ -28,9 +28,9 @@ function ShowCaseLiIcon(props: ExperienceListIconProps) {
           cx="50"
           cy="27"
           r="20"
-          className="fill-zinc-100 stroke-[5px] dark:fill-zinc-900 dark:stroke-zinc-100"
+          className="fill-zinc-100 stroke-[5px] dark:fill-zinc-900 "
         />
-        <circle cx="50" cy="27" r="10" className="fill-accent stroke-1" />
+        <circle cx="50" cy="27" r="10" className=" stroke-1" />
       </svg>
     </figure>
   );
@@ -51,7 +51,7 @@ export default function ExperienceShowcaseListItem(
 ) {
   const ref = useRef(null);
   return (
-    <li ref={ref} className="mx-auto mb-14 flex w-[60%] flex-col gap-1">
+    <li ref={ref} className="mx-auto mb-14 flex w-[60%] flex-col gap-1 ">
       <ShowCaseLiIcon iconRef={ref} />
       <motion.div
         initial={{ y: 50 }}
@@ -63,7 +63,7 @@ export default function ExperienceShowcaseListItem(
       >
         <h3 className="text-base font-bold text-foreground sm:text-xl md:text-2xl">
           {props.title}
-          <span className=" pl-2 text-accent">@{props.organisation.name}</span>
+          <span className=" pl-2 ">@{props.organisation.name}</span>
         </h3>
         <span className="text-sm font-medium text-foreground xs:text-base">
           {props.date} | {props.location}

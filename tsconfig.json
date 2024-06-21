@@ -24,6 +24,6 @@
     "**/*.ts",
     "**/*.tsx",
     "src/data/siteMetaData.mjs"
-  ],
+, "src/component/projects/project-card.5sx", "src/pages/projects.tsx", "src/component/projects/dots.tsx", "src/component/projects/arrow.tsx"  ],
   "exclude": ["node_modules"]
 }
