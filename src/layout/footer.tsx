@@ -1,19 +1,22 @@
 /* eslint-disable react/jsx-key */
 "use client";
-import { Socials } from "@/data/Socials";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {
-  ArrowTopRight,
-} from "@/component/icons";
+import { ArrowTopRight } from "@/component/icons";
 import { IoMdMail } from "react-icons/io";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
+import { Socials } from "@/data/socials";
 
-const icon = [<IoMdMail size={25} />, <FaSquareXTwitter size={25}/>, <FaGithub size={25} />, <FaLinkedin size={25} />];
+const icon = [
+  <IoMdMail size={25} />,
+  <FaSquareXTwitter size={25} />,
+  <FaLinkedin size={25} />,
+  <FaGithub size={25} />,
+];
 
 export default function Footer() {
   const [showArrow, setShowArrow] = useState(false);
@@ -48,8 +51,12 @@ export default function Footer() {
         className="mx-auto flex h-72 w-full max-w-7xl flex-col gap-8 rounded-2xl  p-8 text-foreground sm:p-12 md:gap-12 lg:p-4"
       >
         <div className="text-center">
-          <span className="inline-block rounded-full  px-3 py-1 text-xs font-bold  text-foreground  md:text-sm lg:text-4xl">
-            {"Let's Connect"}
+          <span
+            className="inline-block rounded-full  bg-gradient-to-br from-foreground/70 to-foreground bg-clip-text    px-3 py-1
+           font-bold text-transparent text-2xl  lg:text-6xl
+          "
+          >
+            {"Connect with me"}
           </span>
         </div>
         <div className="flex items-center justify-center gap-x-8">
@@ -57,6 +64,7 @@ export default function Footer() {
             <Link
               href={item?.link}
               target="_blank"
+              title={item.name}
               className="flex h-20 w-20 transform   flex-col items-center justify-center rounded-lg text-foreground shadow-xl duration-300 hover:-translate-y-2 dark:text-accent dark:hover:text-white    sm:hover:bg-accent/30 sm:hover:duration-500"
               key={item.name}
             >
@@ -65,8 +73,9 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <div className=" text-center ">
+        <div className=" text-center  ">
           <a
+            title="Open contact form"
             href={siteMetadata.contactForm}
             className="group relative inline-flex  items-center  justify-center overflow-hidden rounded bg-foreground  p-4 px-6 py-2 font-medium text-foreground shadow-md transition duration-300 ease-out"
           >

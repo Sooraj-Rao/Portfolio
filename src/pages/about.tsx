@@ -9,18 +9,17 @@ import { EXPERIENCE } from "@/data/experiance";
 export default function About() {
   return (
     <>
-      <NextSeo
+    <NextSeo
         title="About Sooraj Rao | Web and Apps Developer"
-        description="Learn more about Sooraj Rao, a dedicated React and Frontend Developer with 2 years of experience. Discover the journey, skills, and passion that drive me to create innovative and user-friendly web solutions."
-        canonical={`${siteMetadata.siteUrl}/about`}
+        description={siteMetadata.description}
+        canonical={siteMetadata.siteUrl}
         openGraph={{
-          url: `${siteMetadata.siteUrl}/about`,
-          title: "Learn About Sooraj Rao - React and Frontend Developer",
-          description:
-            "Dive into the story of Sooraj Rao, a React and Frontend Developer. Uncover the experiences, skills, and passion that fuel a commitment to delivering exceptional web solutions.",
+          url: siteMetadata.siteUrl,
+          title: siteMetadata.headerTitle + "" + siteMetadata.description,
+          description: siteMetadata.description,
           images: [
             {
-              url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
+              url: `${siteMetadata.siteUrl} + /dp.png`,
               alt: "Sooraj Rao - Portfolio Image",
             },
           ],

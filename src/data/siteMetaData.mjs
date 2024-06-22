@@ -13,13 +13,10 @@ export const siteMetadata = {
   siteUrl: "https://soorajrao.xyz",
   siteRepo: "https://github.com/Sooraj-Rao/portfolio",
   siteLogo: "/favicon.ico",
-  image: "/static/homepage.png",
-  twitterImage: "/static/homepage.png",
-  socialBanner: "/static/homepage.png",
-  email: "soorajrao180@gmail.com",
+  email: "soorajrao.in@gmail.com",
   github: "https://github.com/Sooraj-Rao",
   twitter: "https://twitter.com/Sooraj__Rao",
-  linkedin: "https://www.linkedin.com/in/sooraj-%E2%80%8Erao-323b352a2/",
+  linkedin: "https://www.linkedin.com/in/sooraj-rao/",
   locale: "en-US",
   contactForm:'https://contact.soorajrao.xyz/?mode=contact&app=main&utm_source=main'
 };

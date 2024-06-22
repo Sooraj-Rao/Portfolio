@@ -39,7 +39,7 @@ export default function LandingHero() {
         <div className="mx-auto max-w-7xl  text-center">
           <AnimatePresence>
             <FadeUp key="title-main" duration={0.6}>
-              <span className="  text-lg font-semibold">Heyy there, I am </span>
+              <span className="  text-lg font-semibold text-foreground">Heyy there, I am </span>
               <h1
                 className=" 
                 bg-gradient-to-r from-black  to-black/60 bg-clip-text py-2 text-transparent 

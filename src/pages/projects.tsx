@@ -7,18 +7,17 @@ import { PROJECTS_CARD } from "@/data/projects";
 export default function Projects() {
   return (
     <>
-      <NextSeo
-        title="Projects by Sooraj Rao - Web and Apps Developer Portfolio"
-        description="Explore a collection of projects by Sooraj Rao, a seasoned React and Frontend Developer. From innovative web applications to responsive interfaces, discover the depth and diversity of my work."
-        canonical={`${siteMetadata.siteUrl}/projects`}
+     <NextSeo
+        title="Projects by Sooraj Rao | Web and Apps Developer"
+        description={siteMetadata.description}
+        canonical={siteMetadata.siteUrl}
         openGraph={{
-          url: `${siteMetadata.siteUrl}/projects`,
-          title: "Discover Projects by Sooraj Rao - Web and Apps Developer",
-          description:
-            "Explore a showcase of projects crafted by Sooraj Rao, a Web and Apps Developer. Witness the fusion of creativity and technology in web development.",
+          url: siteMetadata.siteUrl,
+          title: siteMetadata.headerTitle + "" + siteMetadata.description,
+          description: siteMetadata.description,
           images: [
             {
-              url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
+              url: `${siteMetadata.siteUrl} + /dp.png`,
               alt: "Sooraj Rao - Portfolio Image",
             },
           ],
@@ -31,8 +30,7 @@ export default function Projects() {
         additionalMetaTags={[
           {
             property: "keywords",
-            content:
-              "Projects, Portfolio, React Developer,Sooraj Rao, Frontend Developer, Web Development, JavaScript, HTML, CSS, UI/UX, Web Applications, Responsive Design",
+            content: siteMetadata.contentText,
           },
         ]}
       />

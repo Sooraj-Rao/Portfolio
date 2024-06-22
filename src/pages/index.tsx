@@ -12,14 +12,14 @@ const SkillsShowcase = dynamic(
   () => import("@/component/skills/skills-showcase"),
   {
     ssr: true,
-  },
+  }
 );
 
 const ProjectShowcase = dynamic(
   () => import("@/component/projects/project-showcase"),
   {
     ssr: true,
-  },
+  }
 );
 
 export default function Home() {
@@ -27,16 +27,15 @@ export default function Home() {
     <>
       <NextSeo
         title="Sooraj Rao | Web and Apps Developer"
-        description="Explore the professional portfolio of Sooraj Rao, a skilled React and Frontend Developer with 2 years of hands-on experience. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
+        description={siteMetadata.description}
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: "Sooraj Rao - React and Frontend Developer Portfolio",
-          description:
-            "Dive into the world of web development with Sooraj Rao. Discover a React and Frontend Developer with 2 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
+          title: siteMetadata.headerTitle + "" + siteMetadata.description,
+          description: siteMetadata.description,
           images: [
             {
-              url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
+              url: `${siteMetadata.siteUrl} + /dp.png`,
               alt: "Sooraj Rao - Portfolio Image",
             },
           ],
@@ -49,7 +48,7 @@ export default function Home() {
         additionalMetaTags={[
           {
             property: "keywords",
-            content:siteMetadata.contentText
+            content: siteMetadata.contentText,
           },
         ]}
       />

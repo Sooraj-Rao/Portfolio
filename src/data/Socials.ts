@@ -3,18 +3,18 @@ import { siteMetadata } from "./siteMetaData.mjs";
 export const Socials = [
   {
     name: "Email",
-    link: "mailto:soorajrao360@gmail.com",
+    link: `mailto:${siteMetadata.email}`,
   },
   {
     name: "X",
     link: siteMetadata.twitter,
   },
   {
-    name: "Github",
-    link: siteMetadata.github,
-  },
-  {
     name: "LinkedIn",
     link: siteMetadata.linkedin,
+  },
+  {
+    name: "Github",
+    link: siteMetadata.github,
   },
 ];

@@ -8,7 +8,6 @@ import MenuLogo from "@/component/utility/menu-button";
 import ThemeSwitch from "@/component/utility/theme-switch";
 import MobileMenu from "@/component/utility/mobile-menu";
 import { Button } from "@/components/ui/button";
-// import { classNames } from "@/utility/classNames";
 
 export type NavbarRoute = {
   title: string;
@@ -74,7 +73,7 @@ export default function Navbar(props: NavbarProps) {
             <Button
               variant="secondary"
               className="  
-            ml-4 mr-7  h-8 animate-[Loader_8s_infinite_linear] rounded-full
+            ml-4 mr-7  h-8 animate-[Loader_5s_infinite_linear] rounded-full
            bg-[linear-gradient(130deg,_#eff1f3_4%,_#b7b7b7_25%,_#eff1f3_36%)] 
            [background-size:1000px_100%] 
            dark:bg-[linear-gradient(130deg,_#3f3f3f_4%,_#919090_25%,_#3f3f3f_36%)] 
