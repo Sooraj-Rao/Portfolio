@@ -12,8 +12,8 @@ import { Socials } from "../data/social";
 
 const icon = [
   <IoMdMail size={25} />,
-  <FaSquareXTwitter size={25} />,
   <FaLinkedin size={25} />,
+  <FaSquareXTwitter size={25} />,
   <FaGithub size={25} />,
 ];
 
@@ -47,12 +47,12 @@ export default function Footer() {
           type: "spring",
           duration: 0.6,
         }}
-        className="mx-auto flex h-72 w-full max-w-7xl flex-col gap-8 rounded-2xl  p-8 text-foreground sm:p-12 md:gap-12 lg:p-4"
+        className="mx-auto flex h-72 w-full sm:max-w-7xl flex-col gap-8 rounded-2xl  p-8 text-foreground sm:p-12 md:gap-12 lg:p-4"
       >
-        <div className="text-center">
+        <div className="text-center w-full ">
           <span
             className="inline-block rounded-full  bg-gradient-to-br from-foreground/70 to-foreground bg-clip-text    px-3 py-1
-           text-2xl font-bold text-transparent  lg:text-6xl
+           sm:text-4xl text-2xl font-bold text-transparent  lg:text-6xl
           "
           >
             {"Connect with me"}
@@ -64,11 +64,12 @@ export default function Footer() {
               href={item?.link}
               target="_blank"
               title={item.name}
-              className="flex h-20 w-20 transform   flex-col items-center justify-center rounded-lg text-foreground shadow-xl duration-300 hover:-translate-y-2 dark:text-accent dark:hover:text-white    sm:hover:bg-accent/30 sm:hover:duration-500"
               key={item.name}
             >
-              <h1>{icon[i]}</h1>
-              <h1>{item?.name}</h1>
+              <div className="  flex lg:w-20 h-20 transform   flex-col items-center justify-center rounded-lg text-foreground lg:shadow-xl duration-300 hover:-translate-y-2 dark:text-accent dark:hover:text-white    sm:hover:bg-accent/30 sm:hover:duration-500">
+                <h1>{icon[i]}</h1>
+                <h1 className=" lg:block hidden">{item?.name}</h1>
+              </div>
             </Link>
           ))}
         </div>
@@ -78,7 +79,7 @@ export default function Footer() {
             href={siteMetadata.contactForm}
             className="group relative inline-flex  items-center  justify-center overflow-hidden rounded bg-foreground  p-4 px-6 py-2 font-medium text-foreground shadow-md transition duration-300 ease-out"
           >
-            <span className="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center  text-background duration-300 group-hover:translate-x-0">
+            <span className="ease absolute  inset-0 flex h-full w-full -translate-x-full items-center justify-center  text-background duration-300 group-hover:translate-x-0">
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -106,7 +107,7 @@ export default function Footer() {
           <div
             title="scroll to top"
             onClick={() => window.scrollTo(0, 0)}
-            className="fixed bottom-10 right-10 h-16 rotate-[-45deg] cursor-pointer rounded-full bg-foreground p-1 text-white duration-300 hover:bg-black dark:bg-transparent dark:hover:bg-accent/50"
+            className="fixed sm:bottom-10 bottom-5 right-5 sm:right-10 sm:h-16 h-10 rotate-[-45deg] cursor-pointer rounded-full bg-foreground p-1 text-white duration-300 hover:bg-black dark:bg-transparent dark:hover:bg-accent/50"
           >
             <ArrowTopRight />
           </div>

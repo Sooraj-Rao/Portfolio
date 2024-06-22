@@ -46,6 +46,7 @@ import GitSvg from "../../public/icons/git.svg";
 import DockerSvg from "../../public/icons/docker.svg";
 import AwsSvg from "../../public/icons/aws.svg";
 import PostmanSvg from "../../public/icons/postman.svg";
+import { FaJava } from "react-icons/fa";
 
 export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
   {
@@ -68,12 +69,12 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: JavascriptSvg,
       },
       {
-        name: "Typescript",
-        icon: TypescriptSvg,
+        name: "Java",
+        icon: FaJava,
       },
       {
-        name: "Dart",
-        icon: PostgressSvg,
+        name: "Typescript",
+        icon: TypescriptSvg,
       },
     ],
   },

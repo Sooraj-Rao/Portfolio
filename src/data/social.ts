@@ -11,12 +11,12 @@ export const Socials: Social[] = [
     link: `mailto:${siteMetadata.email}`,
   },
   {
-    name: "X",
-    link: siteMetadata.twitter,
-  },
-  {
     name: "LinkedIn",
     link: siteMetadata.linkedin,
+  },
+  {
+    name: "X",
+    link: siteMetadata.twitter,
   },
   {
     name: "Github",
