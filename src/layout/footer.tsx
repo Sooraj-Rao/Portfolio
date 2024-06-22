@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -53,7 +52,7 @@ export default function Footer() {
         <div className="text-center">
           <span
             className="inline-block rounded-full  bg-gradient-to-br from-foreground/70 to-foreground bg-clip-text    px-3 py-1
-           font-bold text-transparent text-2xl  lg:text-6xl
+           text-2xl font-bold text-transparent  lg:text-6xl
           "
           >
             {"Connect with me"}

@@ -1,6 +1,11 @@
 import { siteMetadata } from "./siteMetaData.mjs";
 
-export const Socials = [
+type Social = {
+  name: string;
+  link: string;
+};
+
+export const Socials: Social[] = [
   {
     name: "Email",
     link: `mailto:${siteMetadata.email}`,
