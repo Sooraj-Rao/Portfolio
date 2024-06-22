@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
-import { Socials } from "../data/socials";
+import { Socials } from "../data/social";
 
 const icon = [
   <IoMdMail size={25} />,
