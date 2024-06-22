@@ -92,7 +92,7 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
                 </span>
                 <span
                   key={proj.index}
-                  className="-underline-offset-1 text-3xl font-semibold text-accent underline transition-colors duration-300 sm:text-4xl md:text-5xl lg:hidden"
+                  className=" underline-offset-8 text-3xl font-semibold text-accent underline transition-colors duration-300 sm:text-4xl md:text-5xl lg:hidden"
                 >
                   {proj.title}
                 </span>

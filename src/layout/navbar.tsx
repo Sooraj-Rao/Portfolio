@@ -73,7 +73,8 @@ export default function Navbar(props: NavbarProps) {
             <Button
               variant="secondary"
               className="  
-            ml-4 mr-7  h-8 animate-[Loader_5s_infinite_linear] rounded-full
+            ml-4 mr-7  h-8 
+            animate-[Loader_5s_infinite_linear] rounded-full
            bg-[linear-gradient(130deg,_#eff1f3_4%,_#b7b7b7_25%,_#eff1f3_36%)] 
            [background-size:1000px_100%] 
            dark:bg-[linear-gradient(130deg,_#3f3f3f_4%,_#919090_25%,_#3f3f3f_36%)] 
@@ -86,9 +87,24 @@ export default function Navbar(props: NavbarProps) {
 
           <ThemeSwitch />
         </nav>
-        <div className=" flex  w-full justify-end md:w-0">
+        <div className=" flex w-full  items-center backdrop-blur  p-1 overflow-hidden  rounded-full justify-between md:hidden">
           <AnimatePresence>
             <MenuLogo open={isModalOpen} setIsModalOpen={setIsModalOpen} />
+            <Link target="_blank" href={"/Resume.pdf"} className=" mr-1">
+              <Button
+                variant="secondary"
+                className="  
+            animate-[Loader_5s_infinite_linear] 
+            
+           bg-[linear-gradient(130deg,_black_4%,_#919090_25%,_black_36%)] 
+           text-background 
+           [background-size:1000px_100%] 
+           dark:bg-[linear-gradient(130deg,_#eff1f3_4%,_gray_25%,_#eff1f3_36%)]
+           "
+              >
+                Resume
+              </Button>
+            </Link>
           </AnimatePresence>
         </div>
       </div>

@@ -36,14 +36,14 @@ export default function LandingHero() {
       className="pointer-events-none flex h-[calc(100vh-112px)] items-center px-6 sm:px-14 md:px-20"
     >
       <div className="-mt-[112px] w-full">
-        <div className="mx-auto max-w-7xl  text-center">
+        <div className="mx-auto sm:max-w-7xl  text-center">
           <AnimatePresence>
             <FadeUp key="title-main" duration={0.6}>
               <span className="  text-lg font-semibold text-foreground">Heyy there, I am </span>
               <h1
                 className=" 
-                bg-gradient-to-r from-black  to-black/60 bg-clip-text py-2 text-transparent 
-              text-5xl  font-extrabold  dark:from-white dark:to-white/10  sm:text-6xl md:text-7xl xl:text-8xl   "
+                bg-gradient-to-r sm:bg-gradient-to-t from-black  to-black/60 bg-clip-text py-2 text-transparent 
+              text-5xl  font-extrabold  dark:from-white sm:dark:to-white/10 dark:to-white/50  sm:text-6xl md:text-7xl xl:text-8xl   "
               >
                 Sooraj Rao
               </h1>
@@ -57,8 +57,8 @@ export default function LandingHero() {
               </span>
             </FadeUp>
             <FadeUp key="description" duration={0.6} delay={0.2}>
-              <div className=" flex items-center justify-center ">
-                <div className=" shadow shadow-foreground/10   mt-8 flex items-center rounded-full  px-3   py-1 text-center font-semibold  dark:text-zinc-200 sm:text-base md:text-2xl">
+              <div className=" flex items-center justify-center  ">
+                <div className=" shadow shadow-foreground/10 p-4  mt-8 flex items-center rounded-full text-center font-semibold  dark:text-zinc-200 sm:text-base md:text-2xl">
                   <span className=" text-base text-foreground   ">
                   I specialize in developing web and mobile applications.
                   </span>
