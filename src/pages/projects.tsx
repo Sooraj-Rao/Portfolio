@@ -52,11 +52,7 @@ export default function Projects() {
             ))}
    
           </div>
-          <div className="mx-auto mt-16 max-w-5xl text-center text-foreground md:mt-28">
-            <span className="text-xl font-bold md:text-2xl">
-              I am currently learning flutter to expand my skill set beyond web
-              development.
-            </span>
+          <div className="mx-auto mt-16 max-w-5xl text-center text-foreground md:mt-28 ">
             <p className="mt-10 text-base md:text-xl">
               Visit my github to see some of the latest projects{" "}
               <a

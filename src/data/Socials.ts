@@ -6,7 +6,7 @@ export const Socials = [
     link: "mailto:soorajrao360@gmail.com",
   },
   {
-    name: "Twitter",
+    name: "X",
     link: siteMetadata.twitter,
   },
   {

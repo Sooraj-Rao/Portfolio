@@ -10,11 +10,14 @@ import {
   MailIcon,
   ArrowTopRight,
 } from "@/component/icons";
+import { IoMdMail } from "react-icons/io";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { siteMetadata } from "@/data/siteMetaData.mjs";
 
-const icon = [<MailIcon />, <TwitterIcon />, <GithubIcon />, <LinkedinIcon />];
+const icon = [<IoMdMail size={25} />, <FaSquareXTwitter size={25}/>, <FaGithub size={25} />, <FaLinkedin size={25} />];
 
 export default function Footer() {
   const [showArrow, setShowArrow] = useState(false);
@@ -37,7 +40,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="flex w-full flex-col items-center gap-20 px-6 py-8 sm:px-14 md:px-20"
+      className="flex lg:pt-20 w-full flex-col items-center gap-20 px-6 py-8 sm:px-14 md:px-20"
     >
       <motion.div
         initial={{ y: 80 }}
@@ -68,7 +71,7 @@ export default function Footer() {
         </div>
         <div className=" text-center ">
           <a
-            href="https://contact.soorajrao.xyz?ref=main"
+            href={siteMetadata.contactForm}
             className="group relative inline-flex  items-center  justify-center overflow-hidden rounded bg-foreground  p-4 px-6 py-2 font-medium text-foreground shadow-md transition duration-300 ease-out"
           >
             <span className="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center  text-background duration-300 group-hover:translate-x-0">

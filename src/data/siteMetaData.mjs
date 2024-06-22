@@ -21,5 +21,5 @@ export const siteMetadata = {
   twitter: "https://twitter.com/Sooraj__Rao",
   linkedin: "https://www.linkedin.com/in/sooraj-%E2%80%8Erao-323b352a2/",
   locale: "en-US",
-  googleSiteVerification: "_YJlO90eSoye2AQOhbkRAzNbejzCGiTgAD4RNR3NtHc",
+  contactForm:'https://contact.soorajrao.xyz/?mode=contact&app=main&utm_source=main'
 };
