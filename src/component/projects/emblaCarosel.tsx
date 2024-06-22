@@ -22,17 +22,17 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     nextBtnDisabled,
     onPrevButtonClick,
     onNextButtonClick
-  } = usePrevNextButtons(emblaApi)
+  } = usePrevNextButtons(emblaApi, undefined) 
 
   return (
     <div className="embla  pt-3 ">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container ">
-          {slides.map((index) => (
+          {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
               <img
                 className=" h-60  object-contain rounded-3xl"
-                src={index}
+                src={slide}
                 alt="Your alt text"
               />
             </div>
@@ -41,8 +41,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       </div>
       <div className="embla__controls ">
         <div className="embla__buttons text-foreground">
-          <PrevButton onClick={onNextButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={ onPrevButtonClick} disabled={nextBtnDisabled} />
+          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
       </div>
     </div>

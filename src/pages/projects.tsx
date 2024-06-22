@@ -36,7 +36,7 @@ export default function Projects() {
           },
         ]}
       />
-      <section className="mx-auto mb-40 mt-6 w-full gap-20 px-6 sm:mt-12 sm:px-14 md:px-20">
+      <section className="mx-auto mb-20 mt-6 w-full gap-20 px-6 sm:mt-12 sm:px-14 md:px-20">
         <div className="mx-auto max-w-7xl">
           <h1 className="text-2xl font-bold text-foreground md:text-4xl">
             Projects

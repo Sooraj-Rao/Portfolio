@@ -4,10 +4,6 @@ import { Socials } from "@/data/Socials";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import {
-  GithubIcon,
-  LinkedinIcon,
-  TwitterIcon,
-  MailIcon,
   ArrowTopRight,
 } from "@/component/icons";
 import { IoMdMail } from "react-icons/io";
@@ -40,7 +36,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="flex lg:pt-20 w-full flex-col items-center gap-20 px-6 py-8 sm:px-14 md:px-20"
+      className="flex w-full flex-col items-center gap-20 px-6 py-8 sm:px-14 md:px-20"
     >
       <motion.div
         initial={{ y: 80 }}
@@ -83,9 +79,9 @@ export default function Footer() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 ></path>
               </svg>

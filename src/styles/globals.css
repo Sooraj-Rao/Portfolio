@@ -193,12 +193,6 @@
   }
 }
 
-.Loader {
-  animation: Loader 8s infinite linear;
-  background: linear-gradient(150deg, hsl(var(--background)) 4%, #bfbfbff2 15%, hsl(var(--background)) 36%);
-  background-size: 1000px 100%;
-}
-
 
 @keyframes Loader {
   0% {
