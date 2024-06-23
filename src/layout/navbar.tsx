@@ -8,6 +8,7 @@ import MenuLogo from "@/component/utility/menu-button";
 import ThemeSwitch from "@/component/utility/theme-switch";
 import MobileMenu from "@/component/utility/mobile-menu";
 import { Button } from "@/components/ui/button";
+import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export type NavbarRoute = {
   title: string;
@@ -69,7 +70,7 @@ export default function Navbar(props: NavbarProps) {
               );
             })}
           </ul>
-          <Link target="_blank" href={"/Resume.pdf"}>
+          <Link target="_blank" href={siteMetadata.resume}>
             <Button
               variant="secondary"
               className="  
@@ -87,10 +88,10 @@ export default function Navbar(props: NavbarProps) {
 
           <ThemeSwitch />
         </nav>
-        <div className=" flex w-full  items-center backdrop-blur  p-1 overflow-hidden  rounded-full justify-between md:hidden">
+        <div className=" flex w-full  items-center justify-between  overflow-hidden rounded-full  p-1 backdrop-blur md:hidden">
           <AnimatePresence>
             <MenuLogo open={isModalOpen} setIsModalOpen={setIsModalOpen} />
-            <Link target="_blank" href={"/Resume.pdf"} className=" mr-1">
+            <Link target="_blank" href={siteMetadata.resume} className=" mr-1">
               <Button
                 variant="secondary"
                 className="  
