@@ -7,19 +7,19 @@ type Social = {
 
 export const Socials: Social[] = [
   {
-    name: "Email",
+    name: "email",
     link: `mailto:${siteMetadata.email}`,
   },
   {
-    name: "LinkedIn",
+    name: "linkedin",
     link: siteMetadata.linkedin,
   },
   {
-    name: "X",
+    name: "x",
     link: siteMetadata.twitter,
   },
   {
-    name: "Github",
+    name: "github",
     link: siteMetadata.github,
   },
 ];

@@ -39,11 +39,11 @@ export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
       <div className="flex flex-col gap-2">
         <Link href={props.data.href} className="relative max-w-max">
           <span
-            className={`hidden text-6xl font-bold transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:w-0 after:invisible hover:after:visible after:border-[3px] after:border-foreground after:duration-300 hover:after:w-full lg:block
+            className={`hidden text-6xl font-bold transition-colors duration-300  lg:block
               ${
                 props.activeProject === props.data.index
                 ? "text-foreground"
-                : "text-foreground/70"
+                : "text-foreground/60"
               }`}
           >
             {props.data.title}

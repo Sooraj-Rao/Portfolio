@@ -68,7 +68,7 @@ export default function Footer() {
             >
               <div className="  flex lg:w-20 h-20 transform   flex-col items-center justify-center rounded-lg text-foreground lg:shadow-xl duration-300 hover:-translate-y-2 dark:text-accent dark:hover:text-white    sm:hover:bg-accent/30 sm:hover:duration-500">
                 <h1>{icon[i]}</h1>
-                <h1 className=" lg:block hidden">{item?.name}</h1>
+                <h1 className=" lg:block hidden capitalize mt-1">{item?.name}</h1>
               </div>
             </Link>
           ))}

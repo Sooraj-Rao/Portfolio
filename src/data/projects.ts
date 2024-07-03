@@ -38,7 +38,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "The Mechanic Shop Finder project, developed with MERN stack and Redux, simplifies locating mechanic shops. It utilizes React for UI, MongoDB for data storage, and Express.js with Node.js for backend functionality, ensuring seamless user experience.",
     sourceCodeHref: "https://github.com/Sooraj-Rao/FindMyMechanic",
-    liveWebsiteHref: "https://find-my-mechanic.vercel.app/",
+    liveWebsiteHref: "https://mech.soorajrao.in/",
     tags: ["React", "ExpressJS", "NodeJS", "MongoDB", "Redux", "Framer Motion"],
   },
   {
@@ -56,23 +56,10 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       " Need to share files in a flash? You're in the right place. Our website makes it easy, fast, and simple – no lengthy authentication or login required. Just upload and share. It's that easy",
     sourceCodeHref: "https://github.com/Sooraj-Rao/Quicksend",
-    liveWebsiteHref: "https://srj-quicksend.vercel.app/",
+    liveWebsiteHref: "https://quicksend.soorajrao.in/",
     tags: ["NextJS", "TypeScript", "Firebase/Cloud", "MongoDB", "Shadcn/Ui"],
     
   },
-  // {
-  //   name: "File Converter",
-  //   favicon: "/images/projects/logos/manygames.ico",
-  //   imageUrl: [
-  //     "/images/projects/conv.png",
-  //     "/images/projects/con2.png",
-  //     "/images/projects/con3.png",
-  //   ],
-  //   description:
-  //     "The file converter app, developed with Next.js and TypeScript, empowers users to effortlessly convert unlimited files with instant download capabilities. Leveraging Next.js for seamless client-side rendering, TypeScript for type safety, and efficient file handling, users can convert various file formats with ease and download the converted files instantly.",
-  //   sourceCodeHref: "https://github.com/Sooraj-Rao/Convertio",
-  //   liveWebsiteHref: "https://convertio-sooraj-rao.vercel.app/",
-  // },
 
   {
     name: "URL Shortener",
@@ -86,7 +73,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "A MERN stack URL shortener efficiently converts long URLs into Short. Built with MongoDB, Express.js, React.js, and Node.js, it offers seamless link generation and redirection, enhancing user accessibility and web navigation.",
     sourceCodeHref: "https://github.com/Sooraj-Rao/URL-shortner",
-    liveWebsiteHref: "https://srj-quicklink.vercel.app/",
+    liveWebsiteHref: "https://quicklink.soorajrao.in/",
     tags: ["React", "NodeJS", "ExpressJS", "MongoDB", "Shadcn/Ui"],
    
   },
@@ -103,7 +90,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "This e-commerce platform leverages the MERN stack alongside Zustand for state management and Razorpay for secure transactions. With React powering the dynamic user interface, MongoDB handling data storage, and Express.js with Node.js ensuring backend functionality, it delivers a seamless shopping experience.",
     sourceCodeHref: "https://github.com/Sooraj-Rao/E-commerce",
-    liveWebsiteHref: "https://srj-quickmart.vercel.app/",
+    liveWebsiteHref: "https://quickmart.soorajrao.in/",
     tags: [
       "React",
       "NodeJS",

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
 import EmblaCarousel from "@/component/projects/emblaCarosel";
 
-// import Corosel from "@/component/utility/corosel";
 import { GithubIcon } from "@/component/icons";
 import Link from "next/link";
 

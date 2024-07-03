@@ -8,7 +8,8 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     },
     date: "May 2024 - July 2024",
     location: "Remote",
-    description: "Develping fullstack complex application with Next js.",
+    description:
+      "Developed a full-stack resume builder application using Next.js and Node.js. Collaborated with a team of interns, significantly enhancing our group communication skills.",
   },
   {
     title: "Reactjs Frontend Developer",
@@ -18,6 +19,6 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     date: "Apr 2024 - Mar 2024",
     location: "Remote",
     description:
-      "Developed Application UI with React and also used Redux for state management, Crafted a Dashboard panel using tailwincd CSS.  ",
+      "Designed an application UI using React and employed Redux for efficient state management. Created a sleek dashboard panel using Tailwind CSS for enhanced user experience.",
   },
 ];
