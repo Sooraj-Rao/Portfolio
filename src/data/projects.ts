@@ -65,10 +65,11 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     name: "URL Shortener",
     favicon: "/favicon.ico",
     imageUrl: [
-      "/images/projects/url.webp",
+      "/images/projects/url5.webp",
       "/images/projects/url3.webp",
       "/images/projects/url2.webp",
       "/images/projects/url1.webp",
+      "/images/projects/url4.webp",
     ],
     description:
       "A MERN stack URL shortener efficiently converts long URLs into Short. Built with MongoDB, Express.js, React.js, and Node.js, it offers seamless link generation and redirection, enhancing user accessibility and web navigation.",
