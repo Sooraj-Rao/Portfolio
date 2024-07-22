@@ -43,7 +43,7 @@ export default function LandingHero() {
               <h1
                 className=" 
                 bg-gradient-to-r sm:bg-gradient-to-t from-black  to-black/60 bg-clip-text py-2 text-transparent 
-              text-5xl  font-extrabold  dark:from-white sm:dark:to-white/10 dark:to-white/50  sm:text-6xl md:text-7xl xl:text-8xl   "
+              text-5xl  font-extrabold  dark:from-white sm:dark:to-white/30 dark:to-white/50  sm:text-6xl md:text-7xl xl:text-8xl   "
               >
                 Sooraj Rao
               </h1>
