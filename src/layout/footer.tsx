@@ -112,7 +112,7 @@ export default function Footer() {
             <ArrowTopRight />
           </div>
         )}
-        <span className="text-foreground">©2024 Sooraj Rao</span>
+        <span className="text-foreground" title="Sooraj Rao">©2024 Sooraj Rao</span>
       </div>
     </footer>
   );
