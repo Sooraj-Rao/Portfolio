@@ -18,7 +18,7 @@ export const siteMetadata = {
   twitter: "https://x.com/SoorajRaoo",
   linkedin: "https://www.linkedin.com/in/sooraj-rao/",
   locale: "en-US",
-  resume: "https://contact.soorajrao.in/?mode=contact&app=main&utm_source=resume",
+  resume: "https://resume.soorajrao.in",
   contactForm:
     "https://contact.soorajrao.in/?mode=contact&app=main&utm_source=main",
 };
