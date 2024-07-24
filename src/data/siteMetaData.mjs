@@ -15,7 +15,6 @@ export const siteMetadata = {
   siteLogo: "/favicon.ico",
   email: "soorajrao.in@gmail.com",
   github: "https://github.com/Sooraj-Rao",
-  twitter: "https://x.com/SoorajRaoo",
   linkedin: "https://www.linkedin.com/in/sooraj-rao/",
   locale: "en-US",
   resume: "https://resume.soorajrao.in",

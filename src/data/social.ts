@@ -14,10 +14,10 @@ export const Socials: Social[] = [
     name: "linkedin",
     link: siteMetadata.linkedin,
   },
-  {
-    name: "x",
-    link: siteMetadata.twitter,
-  },
+  // {
+  //   name: "x",
+  //   link: siteMetadata.twitter,
+  // },
   {
     name: "github",
     link: siteMetadata.github,
