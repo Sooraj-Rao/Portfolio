@@ -68,10 +68,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Javascript",
         icon: JavascriptSvg,
       },
-      {
-        name: "Java",
-        icon: FaJava,
-      },
+      // {
+      //   name: "Java",
+      //   icon: FaJava,
+      // },
       {
         name: "Typescript",
         icon: TypescriptSvg,
@@ -159,10 +159,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "MySql",
         icon: SiMysql,
       },
-      {
-        name: "Postgress",
-        icon: PostgressSvg,
-      },
+      // {
+      //   name: "Postgress",
+      //   icon: PostgressSvg,
+      // },
       {
         name: "Redis",
         icon: SiRedis,
@@ -180,10 +180,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         name: "Git",
         icon: GitSvg,
       },
-      {
-        name: "Docker",
-        icon: DockerSvg,
-      },
+      // {
+      //   name: "Docker",
+      //   icon: DockerSvg,
+      // },
       {
         name: "AWS",
         icon: AwsSvg,
@@ -197,10 +197,10 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
   {
     sectionName: "App Develepment",
     skills: [
-      {
-        name: "Flutter",
-        icon: SiFlutter,
-      },
+      // {
+      //   name: "Flutter",
+      //   icon: SiFlutter,
+      // },
       {
         name: "React-Native",
         icon: ReactjsSvg,
