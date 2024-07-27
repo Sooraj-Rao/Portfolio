@@ -13,8 +13,8 @@ import { Socials } from "../data/social";
 const icon = [
   <IoMdMail size={25} />,
   <FaLinkedin size={25} />,
-  <FaSquareXTwitter size={25} />,
   <FaGithub size={25} />,
+  // <FaSquareXTwitter size={25} />,
 ];
 
 export default function Footer() {
@@ -47,12 +47,12 @@ export default function Footer() {
           type: "spring",
           duration: 0.6,
         }}
-        className="mx-auto flex h-72 w-full sm:max-w-7xl flex-col gap-8 rounded-2xl  p-8 text-foreground sm:p-12 md:gap-12 lg:p-4"
+        className="mx-auto flex h-72 w-full flex-col gap-8 rounded-2xl p-8  text-foreground sm:max-w-7xl sm:p-12 md:gap-12 lg:p-4"
       >
-        <div className="text-center w-full ">
+        <div className="w-full text-center ">
           <span
             className="inline-block rounded-full  bg-gradient-to-br from-foreground/70 to-foreground bg-clip-text    px-3 py-1
-           sm:text-4xl text-2xl font-bold text-transparent  lg:text-6xl
+           text-2xl font-bold text-transparent sm:text-4xl  lg:text-6xl
           "
           >
             {"Connect with me"}
@@ -66,9 +66,11 @@ export default function Footer() {
               title={item.name}
               key={item.name}
             >
-              <div className="  flex lg:w-20 h-20 transform   flex-col items-center justify-center rounded-lg text-foreground lg:shadow-xl duration-300 hover:-translate-y-2 dark:text-accent dark:hover:text-white    sm:hover:bg-accent/30 sm:hover:duration-500">
+              <div className="  flex h-20 transform flex-col   items-center justify-center rounded-lg text-foreground duration-300 hover:-translate-y-2 dark:text-accent dark:hover:text-white sm:hover:bg-accent/30 sm:hover:duration-500    lg:w-20 lg:shadow-xl">
                 <h1>{icon[i]}</h1>
-                <h1 className=" lg:block hidden capitalize mt-1">{item?.name}</h1>
+                <h1 className=" mt-1 hidden capitalize lg:block">
+                  {item?.name}
+                </h1>
               </div>
             </Link>
           ))}
@@ -107,12 +109,14 @@ export default function Footer() {
           <div
             title="scroll to top"
             onClick={() => window.scrollTo(0, 0)}
-            className="fixed sm:bottom-10 bottom-5 right-5 sm:right-10 sm:h-16 h-10 rotate-[-45deg] cursor-pointer rounded-full bg-foreground p-1 text-white duration-300 hover:bg-black dark:bg-transparent dark:hover:bg-accent/50"
+            className="fixed bottom-5 right-5 h-10 rotate-[-45deg] cursor-pointer rounded-full bg-foreground p-1 text-white duration-300 hover:bg-black dark:bg-transparent dark:hover:bg-accent/50 sm:bottom-10 sm:right-10 sm:h-16"
           >
             <ArrowTopRight />
           </div>
         )}
-        <span className="text-foreground" title="Sooraj Rao">©2024 Sooraj Rao</span>
+        <span className="text-foreground" title="Sooraj Rao">
+          ©2024 Sooraj Rao
+        </span>
       </div>
     </footer>
   );
